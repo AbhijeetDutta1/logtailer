@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"os"
 	"os/signal"
@@ -19,8 +20,14 @@ const (
 )
 
 func main() {
+	bucketPtr := flag.String("bucket", "", "Google Cloud Storage bucket name for log uploads")
+	flag.Parse()
+
 	fmt.Println("--- Streaming macOS Unified Logging System ---")
 	fmt.Printf("Batch rotation: %d bytes or %v\n", MaxLogSize, MaxDuration)
+	if *bucketPtr != "" {
+		fmt.Printf("GCS Uploads enabled: gs://%s/\n", *bucketPtr)
+	}
 
 	// Ensure logs directory exists
 	if err := os.MkdirAll("logs", 0755); err != nil {
@@ -28,7 +35,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	manager := tailer.NewLogManager("logs", MaxLogSize, MaxDuration)
+	manager := tailer.NewLogManager("logs", *bucketPtr, MaxLogSize, MaxDuration)
 	manager.StartTimer()
 
 	// Channel to handle interrupt signals for clean shutdown

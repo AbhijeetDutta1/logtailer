@@ -1,19 +1,23 @@
 package tailer
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
+	"io"
 	"os"
 	"path/filepath"
 	"sync"
 	"time"
 
+	"cloud.google.com/go/storage"
 	"logtailer/pkg/parser"
 )
 
 // LogManager handles batching log entries and rotating files based on size and time.
 type LogManager struct {
 	logsDir      string
+	bucketName   string
 	maxSize      int64
 	maxDuration  time.Duration
 	buffer       []*parser.LogEntry
@@ -23,9 +27,10 @@ type LogManager struct {
 }
 
 // NewLogManager creates a new LogManager.
-func NewLogManager(logsDir string, maxSize int64, maxDuration time.Duration) *LogManager {
+func NewLogManager(logsDir string, bucketName string, maxSize int64, maxDuration time.Duration) *LogManager {
 	return &LogManager{
 		logsDir:      logsDir,
+		bucketName:   bucketName,
 		maxSize:      maxSize,
 		maxDuration:  maxDuration,
 		buffer:       make([]*parser.LogEntry, 0),
@@ -86,6 +91,16 @@ func (m *LogManager) rotate() error {
 	if err := encoder.Encode(m.buffer); err != nil {
 		return err
 	}
+	file.Close() // Ensure file is closed before uploading
+
+	// Upload to GCS if bucket is configured
+	if m.bucketName != "" {
+		go func(fname string) {
+			if err := m.uploadToGCS(fname); err != nil {
+				fmt.Fprintf(os.Stderr, "[LogManager] GCS Upload Error: %v\n", err)
+			}
+		}(filename)
+	}
 
 	// Reset buffer
 	m.buffer = make([]*parser.LogEntry, 0)
@@ -108,4 +123,32 @@ func (m *LogManager) StartTimer() {
 			m.mu.Unlock()
 		}
 	}()
+}
+
+// uploadToGCS uploads a file to the configured Google Cloud Storage bucket.
+func (m *LogManager) uploadToGCS(filename string) error {
+	ctx := context.Background()
+	client, err := storage.NewClient(ctx)
+	if err != nil {
+		return fmt.Errorf("storage.NewClient: %v", err)
+	}
+	defer client.Close()
+
+	f, err := os.Open(filename)
+	if err != nil {
+		return fmt.Errorf("os.Open: %v", err)
+	}
+	defer f.Close()
+
+	objectName := filepath.Base(filename)
+	wc := client.Bucket(m.bucketName).Object(objectName).NewWriter(ctx)
+	if _, err = io.Copy(wc, f); err != nil {
+		return fmt.Errorf("io.Copy: %v", err)
+	}
+	if err := wc.Close(); err != nil {
+		return fmt.Errorf("Writer.Close: %v", err)
+	}
+
+	fmt.Printf("[LogManager] Successfully uploaded %s to gs://%s/\n", objectName, m.bucketName)
+	return nil
 }

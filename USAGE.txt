@@ -14,6 +14,16 @@ Once built, you can run the tailer directly:
 ./mac-log-tailer
 ```
 
-The tool will start streaming the macOS Unified Logging System. It will:
+### Google Cloud Storage (GCS) Uploads
+To automatically upload rotated log files to a GCS bucket, use the `--bucket` flag:
+
+```bash
+./mac-log-tailer --bucket YOUR_BUCKET_NAME
+```
+
+**Note**: You must have Google Cloud credentials configured in your environment (e.g., `export GOOGLE_APPLICATION_CREDENTIALS=/path/to/key.json`).
+
+The tool will:
 1. Print logs to the console (with color-coded errors).
 2. Automatically rotate and save logs into the `logs/` directory as structured JSON files when they reach 1MB or 30 seconds.
+3. If `--bucket` is provided, uploaded the rotated JSON file to GCS in the background.
