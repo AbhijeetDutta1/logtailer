@@ -6,7 +6,7 @@ TEST_LOG="test.log"
 echo "Initializing $TEST_LOG..." > "$TEST_LOG"
 
 # Start the tailer in the background, redirect output to results.log
-./logtailer "$TEST_LOG" > results.log 2>&1 &
+./mac-log-tailer "$TEST_LOG" > results.log 2>&1 &
 TAILER_PID=$!
 
 # Wait a bit for it to start
