@@ -1,6 +1,1040 @@
---- Tailing test.log ---
-Line 1
-Line 2
-Line 3
+--- Streaming macOS Unified Logging System ---
+Batch rotation: 1048576 bytes or 30s
+Timestamp                       (process)[PID]    
+2026-03-24 20:12:55.905543-0700  localhost mds[147]: (CoreDuetContext) Created Activity ID: 0xb4ca78, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:55.915613-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] Dispatching event with 2 children, _eventMask=0x23 _childEventMask=0x22 Cancel=0 Touching=1 inRange=1 (deviceID 0x300000080500000)
+2026-03-24 20:12:55.939570-0700  localhost bluetoothd[61035]: (SPOwner) [com.apple.icloud.SPOwner:CBPeripheralManagement] SPCBLeechScanner: didDiscoverPeripheral: {
+    kCBAdvDataChannel = 38;
+    kCBAdvDataDeviceAddress = {length = 6, bytes = 0xecd050d03fc4};
+    kCBAdvDataDeviceAddressType = 1;
+    kCBAdvDataIsCoexDenied = 0;
+    kCBAdvDataIsConnectable = 1;
+    kCBAdvDataIsELNAOn = 1;
+    kCBAdvDataIsFromSCCompensation = 0;
+    kCBAdvDataIsPassup = 0;
+    kCBAdvDataManufacturerData = {length = 6, bytes = 0x4c001202ae00};
+    kCBAdvDataRxPrimaryPHY = 0;
+    kCBAdvDataRxSecondaryPHY = 0;
+    kCBAdvDataScanSourceCore = 0;
+    kCBAdvDataTimestamp = "796101175.938681";
+    kCBAdvDataWSaturated = 0;
+    kCBAdvDataWlanRSSI = 0;
+    kCBScanOptionFilterIdentifier = 0;
+    kCBScanOptionFilterIdentifierString = default;
+}  RSSI: -92
+2026-03-24 20:12:55.939858-0700  localhost locationd[166]: (SPFinder) [com.apple.icloud.SPFinder:advertisementCache] saveBeaconPayload: 1
+2026-03-24 20:12:55.940192-0700  localhost searchpartyd[320]: (FindMyBase) Created Activity ID: 0xb4c8e3, Description: leechScannerDiscoveredAdvertisementData(rssi:completion:)
+2026-03-24 20:12:55.939951-0700  localhost locationd[166]: (SPFinder) Created Activity ID: 0xb4cadc, Description: SPAdvertisementCache saveBeaconPayloads:completion:
+2026-03-24 20:12:55.940265-0700  localhost searchpartyd[320]: (FindMyBase) Created Activity ID: 0xb4c8e4, Description: SaveObservedAdvertisment
+[31m2026-03-24 20:12:55.941026-0700  localhost locationd[166]: [com.apple.locationd.Core:Harvester] {"msg":"#CLAvengerObservationReporterService WARN: onAvengerAdvertisementDetected: saveBeaconPayloads error received", "error":"Error Domain=searchpartyd.AdvertisementCacheServiceError Code=2 \"(null)\""}[0m
+2026-03-24 20:12:55.940662-0700  localhost searchpartyd[320]: (FindMyBase) Created Activity ID: 0xb4c8e5, Description: LeechScanningService
+2026-03-24 20:12:55.940895-0700  localhost searchpartyd[320]: (FindMyBase) Created Activity ID: 0xb4c8e6, Description: LeechScanner.ObjectDiscovery
+2026-03-24 20:12:55.951293-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice B4B1B1EF-89E2-FC1A-4B86-038E62D5384D, BDA 6F:23:6B:44:6C:F6, Nm 'Living Room', Md AppleTV6,2, IDS 64F2F16B-17CC-4D34-AD34-A9C8B1C918B6, stID 64F2F16B-17CC-4D34-AD34-A9C8B1C918B6, DsFl 0x8000000000 < AirPlayTarget >, DsTy <NearbyInfoV2, MiLo>, DvF 0x40000000800 < SystemPaired Connectable >, RSSI -86, Ch 38, AdTsMC <489441435784>, AMfD <4c 00 09 08 13 5e c0 a8 01 45 1b 58 16 08 00 25 52 6a c1 6d 7d 4d>, apTC 94, apTF 0x13 < SupportsAWDLSolo SupportsMediaControl HasPort >, apTI 192.168.1.69, apTP 7000, nb2Fe 0x4 < MiLo >, nb2A <52 6a c1>, nb2Ai <6d 7d 4d>, CF 0x200000000 < RSSI >
+2026-03-24 20:12:55.951890-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice B4B1B1EF-89E2-FC1A-4B86-038E62D5384D, BDA 6F:23:6B:44:6C:F6, Nm 'Living Room', Md AppleTV6,2, IDS 64F2F16B-17CC-4D34-AD34-A9C8B1C918B6, stID 64F2F16B-17CC-4D34-AD34-A9C8B1C918B6, DsFl 0x8000000000 < AirPlayTarget >, DsTy <NearbyInfoV2, MiLo>, DvF 0x40000000800 < SystemPaired Connectable >, RSSI -86, Ch 38, AdTsMC <489441436393>, AMfD <4c 00 09 08 13 5e c0 a8 01 45 1b 58 16 08 00 25 52 6a c1 6d 7d 4d>, apTC 94, apTF 0x13 < SupportsAWDLSolo SupportsMediaControl HasPort >, apTI 192.168.1.69, apTP 7000, nb2Fe 0x4 < MiLo >, nb2A <52 6a c1>, nb2Ai <6d 7d 4d>, CF 0x200000000 < RSSI >
+2026-03-24 20:12:55.980438-0700  localhost kernel[0]: (AppleIntelCFLGraphicsFramebuffer) u>386757825400 DPAUXLOG: +dpAuxChWrite: AUXWR@0x004d2 (1) - Status:0
+2026-03-24 20:12:55.980445-0700  localhost kernel[0]: (AppleIntelCFLGraphicsFramebuffer) WriteAUX:534 AuxData [0xffffffbde18e3824:1, 32:1]
+2026-03-24 20:12:55.980447-0700  localhost kernel[0]: (AppleIntelCFLGraphicsFramebuffer)     0: 85
+2026-03-24 20:12:55.980451-0700  localhost kernel[0]: (AppleIntelCFLGraphicsFramebuffer) IG:: adjustPixelClockForWatermarks:28310 Original PixelClock: 328920000
+2026-03-24 20:12:55.980454-0700  localhost kernel[0]: (AppleIntelCFLGraphicsFramebuffer) IG:: adjustPixelClockForWatermarks:28311 Adjusted PixelClock: 447687744
+2026-03-24 20:12:55.980698-0700  localhost kernel[0]: (AppleIntelCFLGraphicsFramebuffer) u>386757825659 DPAUXLOG: +dpAuxChWrite: AUXWR@0x004d2 (1) - Status:0
+2026-03-24 20:12:55.980702-0700  localhost kernel[0]: (AppleIntelCFLGraphicsFramebuffer) WriteAUX:534 AuxData [0xffffffbde113be74:1, 32:1]
+2026-03-24 20:12:55.980703-0700  localhost kernel[0]: (AppleIntelCFLGraphicsFramebuffer)     0: 85
+2026-03-24 20:12:56.000746-0700  localhost syspolicyd[300]: (Security) Created Activity ID: 0xb4cb35, Description: SecKeyVerifySignature
+2026-03-24 20:12:56.001036-0700  localhost syspolicyd[300]: (Security) Created Activity ID: 0xb4cb36, Description: SecTrustEvaluateIfNecessary
+2026-03-24 20:12:56.001721-0700  localhost trustd[216]: (Security) Created Activity ID: 0xb4cb4c, Description: SecKeyVerifySignature
+2026-03-24 20:12:56.001871-0700  localhost trustd[216]: (Security) Created Activity ID: 0xb4cb4d, Description: SecKeyVerifySignature
+2026-03-24 20:12:56.002048-0700  localhost trustd[216]: (Security) Created Activity ID: 0xb4cb4e, Description: SecKeyVerifySignature
+2026-03-24 20:12:56.002289-0700  localhost trustd[216]: [com.apple.securityd:SecError] Malformed anchor records, not an array
+2026-03-24 20:12:55.964802-0700  localhost proactived[48272]: (ProactiveContextClient) [com.apple.duetexpertd.atx:modes] ATXModeCalendarClassifier: Refreshing due to event change
+2026-03-24 20:12:56.009989-0700  localhost proactived[48272]: (EventKit) Created Activity ID: 0xb4c94c, Description: CADEventPredicate
+2026-03-24 20:12:56.023062-0700  localhost proactived[48272]: (ProactiveContextClient) [com.apple.duetexpertd.atx:modes] ATXModeHeuristicClassifier: <private> updated its features
+2026-03-24 20:12:56.023270-0700  localhost proactived[48272]: (ProactiveContextClient) [com.apple.duetexpertd.atx:modes] ATXModeHeuristicClassifier update with 1 feature sets in buffer
+2026-03-24 20:12:56.023349-0700  localhost proactived[48272]: (ProactiveContextClient) [com.apple.duetexpertd.atx:modes] ATXModeHeuristicClassifier predict mode with features: <private>
+2026-03-24 20:12:56.025831-0700  localhost proactived[48272]: (ProactiveContextClient) [com.apple.duetexpertd.atx:modes] [ATXModeHeuristicClassifier][<private>] Predicted mode: Working
+2026-03-24 20:12:56.032435-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa762aeecd0] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:56.032708-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa762aeecd0] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:56.032748-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa762aeecd0] invalidated after a failed init
+[31m2026-03-24 20:12:56.032842-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:56.032945-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:56.033002-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:56.033042-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa75c51a490 -newEndpoint returned nil[0m
+2026-03-24 20:12:56.033091-0700  localhost imagent[542]: (libsystem_trace.dylib) Created Activity ID: 0xb4c827, Description: Activity for state dumps
+[31m2026-03-24 20:12:56.033090-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa75c51a490 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:56.033147-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:56.033196-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c50a890] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+2026-03-24 20:12:56.032630-0700  localhost kernel[0]: (Sandbox) 1 duplicate report for Sandbox: searchpartyuseragent(556) deny(1) mach-lookup com.apple.contactsd.persistence
+2026-03-24 20:12:56.032639-0700  localhost kernel[0]: (Sandbox) Sandbox: imagent(542) deny(1) mach-lookup com.apple.contactsd.persistence
+[31m2026-03-24 20:12:56.033331-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c50a890] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:56.033368-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c50a890] invalidated after a failed init
+[31m2026-03-24 20:12:56.033430-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:56.033508-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:56.033547-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:56.033581-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa75c51a490 -newEndpoint returned nil[0m
+2026-03-24 20:12:56.033618-0700  localhost imagent[542]: (libsystem_trace.dylib) Created Activity ID: 0xb4c828, Description: Activity for state dumps
+[31m2026-03-24 20:12:56.033617-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa75c51a490 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:56.033665-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:56.033710-0700  localhost imagent[542]: (CoreData) CoreData: XPC: sendMessage: failed #7
+2026-03-24 20:12:56.101836-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738335660] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+2026-03-24 20:12:56.102233-0700  localhost kernel[0]: (Sandbox) 1 duplicate report for Sandbox: imagent(542) deny(1) mach-lookup com.apple.contactsd.persistence
+[31m2026-03-24 20:12:56.102329-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738335660] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:56.102247-0700  localhost kernel[0]: (Sandbox) Sandbox: searchpartyuseragent(556) deny(1) mach-lookup com.apple.contactsd.persistence
+2026-03-24 20:12:56.102424-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738335660] invalidated after a failed init
+[31m2026-03-24 20:12:56.102593-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:56.102803-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:56.102895-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:56.102951-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738008ee0 -newEndpoint returned nil[0m
+2026-03-24 20:12:56.103010-0700  localhost searchpartyuseragent[556]: (libsystem_trace.dylib) Created Activity ID: 0xb4c6fc, Description: Activity for state dumps
+[31m2026-03-24 20:12:56.103008-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738008ee0 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:56.103084-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:56.103158-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973a356a50] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:56.103332-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973a356a50] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:56.103376-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973a356a50] invalidated after a failed init
+[31m2026-03-24 20:12:56.103438-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:56.103570-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:56.103622-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:56.103669-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738008ee0 -newEndpoint returned nil[0m
+2026-03-24 20:12:56.103714-0700  localhost searchpartyuseragent[556]: (libsystem_trace.dylib) Created Activity ID: 0xb4c6fd, Description: Activity for state dumps
+[31m2026-03-24 20:12:56.103713-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738008ee0 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:56.103772-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:56.103828-0700  localhost searchpartyuseragent[556]: (CoreData) CoreData: XPC: sendMessage: failed #7
+2026-03-24 20:12:56.117559-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] Dispatching event with 2 children, _eventMask=0x2 _childEventMask=0x2 Cancel=0 Touching=0 inRange=1 (deviceID 0x300000080500000)
+2026-03-24 20:12:56.181949-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: isInfraRealtimePacketThresholdAllowed allowed:1 option:32 threshold:50 noRegistrations:1 cachedPeerCount:0 fastDiscoveryInactive:1 fastDiscoveryOnSince:386758026
+2026-03-24 20:12:56.181978-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: currentInfraTrafficType:8981 checking if realtime upgrade required with inputPackets:35 outputPackets:31 packetThreshold:50
+2026-03-24 20:12:56.181985-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: monitorInfraTraffic[9103] Infra Traffic type has changed from Idle to Real Time. AWDL is Off
+2026-03-24 20:12:56.181991-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: monitorInfraTraffic[9182]: Updating infra traffic state from Idle to Real Time
+2026-03-24 20:12:56.258628-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice D3568EC4-CAF3-1050-F618-93A317B71B16, BDA 73:47:A2:E3:0F:AC, Nm 'Bluetooth Device', DsFl 0x40 < NearbyInfo >, DvF 0x40000000000 < Connectable >, RSSI -78, Ch 39, AdTsMC <489441743011>, AMfD <4c 00 10 07 23 1f ca bf ec 36 18>, nbIAT <ca bf ec>, nbIF 0x13C2 < Ranging AT Duet WiFiP2P HtSp Stat >, CF 0x200000000 < RSSI >
+2026-03-24 20:12:56.259317-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice D3568EC4-CAF3-1050-F618-93A317B71B16, BDA 73:47:A2:E3:0F:AC, Nm 'Bluetooth Device', DsFl 0x40 < NearbyInfo >, DvF 0x40000000000 < Connectable >, RSSI -78, Ch 39, AdTsMC <489441743763>, AMfD <4c 00 10 07 23 1f ca bf ec 36 18>, nbIAT <ca bf ec>, nbIF 0x13C2 < Ranging AT Duet WiFiP2P HtSp Stat >, CF 0x200000000 < RSSI >
+[31m2026-03-24 20:12:56.259203-0700  localhost sharingd[459]: (CoreUtils) [com.apple.sharing:SDNearbyAgentCore] ### Unable to decrypt activity level with authTag yes identity no error 0 for device SFDevice ID bb00ca66-2f2e-1000-8000-001ff3fb80df, RSSI -78 (-74)~F, DuetSync, WiFiP2P, DF 0x20 < Ranging >, DT Generic, AcLv ? (16)[0m
+[31m2026-03-24 20:12:56.259804-0700  localhost sharingd[459]: (CoreUtils) [com.apple.sharing:SDNearbyAgentCore] ### Unable to decrypt activity level with authTag yes identity no error 0 for device SFDevice ID bb00ca66-2f2e-1000-8000-001ff3fb80df, RSSI -78 (-76)~F, DuetSync, WiFiP2P, DF 0x20 < Ranging >, DT Generic, AcLv ? (16)[0m
+2026-03-24 20:12:56.309834-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Advert timer expired for client 12 after 2.00 seconds
+2026-03-24 20:12:56.310464-0700  localhost identityservicesd[418]: (WirelessProximity) [com.apple.bluetooth:WirelessProximity] Continuity update advertising with data: advertising request of type 12, priority 7, UseFG 290 (181.25 ms), data {length = 14, bytes = 0x084e03ae22e37a860e2c5609e518}, connectable 1, addr change 1, options {
+}, advertisementRequestedAt 0
+2026-03-24 20:12:56.310719-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Updating advert request for client 12 after 2.00 seconds
+2026-03-24 20:12:56.310799-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Start advertising for process identityservicesd (418) of type 12 with advertising interval 290 (181.25 ms)
+2026-03-24 20:12:56.310864-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] [Privacy] removeAdvertisingRequest: 12, <private>
+2026-03-24 20:12:56.310944-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Adding data of type: 9, advData: {length = 8, bytes = 0x13ecc0a801c61b58} advInterval: 290 EPA:0
+2026-03-24 20:12:56.310992-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Current advertisement packet: {length = 10, bytes = 0x090813ecc0a801c61b58} advertRate: 290 EPA:0
+2026-03-24 20:12:56.311037-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Adding data of type: 12, advData: {length = 14, bytes = 0x084e03ae22e37a860e2c5609e518} advInterval: 290 EPA:0
+2026-03-24 20:12:56.311076-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Current advertisement packet: {length = 16, bytes = 0x0c0e084e03ae22e37a860e2c5609e518} advertRate: 290 EPA:0
+2026-03-24 20:12:56.311118-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Adding data of type: 16, advData: {length = 6, bytes = 0x4f1da2d32058} advInterval: 432 EPA:0
+2026-03-24 20:12:56.311157-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Current advertisement packet: {length = 24, bytes = 0x0c0e084e03ae22e37a860e2c5609e51810064f1da2d32058} advertRate: 290 EPA:0
+2026-03-24 20:12:56.311196-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Adding data of type: 22, advData: {length = 8, bytes = 0x004994aff7da1fdb} advInterval: 290 EPA:0
+2026-03-24 20:12:56.311236-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Current advertisement packet: {length = 20, bytes = 0x090813ecc0a801c61b581608004994aff7da1fdb} advertRate: 290 EPA:0
+2026-03-24 20:12:56.311268-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] [Privacy] AdvertisingRulesiOS: current connectable advertisers: <private>, current clients for address change notification: <private>
+2026-03-24 20:12:56.311300-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] [Privacy] AdvertisingRulesiOS: remaining connectable advertisers: <private>, notification clients: <private>
+2026-03-24 20:12:56.311342-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] [Privacy] AdvertisingRulesiOS: current non-connectable advertisers: <private>, current clients for address change notification: <private>
+2026-03-24 20:12:56.311372-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] [Privacy] AdvertisingRulesiOS: remaining non-connectable advertisers: <private>, notification clients: <private>
+2026-03-24 20:12:56.311412-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] AdvertisingRulesiOS - current advertisers: 9 12 16 22
+2026-03-24 20:12:56.311465-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] [Privacy] AdvertisingRulesiOS: AddrChangeNotificationNeeded adv packet:  <private>
+2026-03-24 20:12:56.311510-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] [Privacy] AdvertisingRulesiOS: AddrChangeNotificationNeeded adv packet:  <private>
+2026-03-24 20:12:56.311660-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] AdvertisingRulesiOS - advertising packets: (
+        {
+        kCBAdvDataAppleMfgData = {length = 28, bytes = 0x1bff4c00 0c0e084e 03ae22e3 7a860e2c ... 10064f1d a2d32058 };
+        kCBAdvDataIsConnectable = 1;
+        kCBAdvOptionAdvertisingInterval = 290;
+        kCBAdvOptionStopOnAdvertisingAddressChange = 1;
+        kCBManagerListOfClients =         (
+            "com.apple.identityservicesd",
+            "com.apple.sharingd"
+        );
+        kCBMsgArgIsPrivilegedDaemon = 1;
+    },
+        {
+        kCBAdvDataAppleMfgData = {length = 24, bytes = 0x17ff4c00090813ecc0a801c61b581608004994aff7da1fdb};
+        kCBAdvDataIsConnectable = 0;
+        kCBAdvOptionAdvertisingInterval = 290;
+        kCBAdvOptionStopOnAdvertisingAddressChange = 1;
+        kCBMsgArgIsPrivilegedDaemon = 1;
+    }
+)
+2026-03-24 20:12:56.311784-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Requesting to start advertising for clients 9 12 16 22  with (
+        {
+        kCBAdvDataAppleMfgData = {length = 28, bytes = 0x1bff4c00 0c0e084e 03ae22e3 7a860e2c ... 10064f1d a2d32058 };
+        kCBAdvDataIsConnectable = 1;
+        kCBAdvOptionAdvertisingInterval = 290;
+        kCBAdvOptionStopOnAdvertisingAddressChange = 1;
+        kCBManagerListOfClients =         (
+            "com.apple.identityservicesd",
+            "com.apple.sharingd"
+        );
+        kCBMsgArgIsPrivilegedDaemon = 1;
+    },
+        {
+        kCBAdvDataAppleMfgData = {length = 24, bytes = 0x17ff4c00090813ecc0a801c61b581608004994aff7da1fdb};
+        kCBAdvDataIsConnectable = 0;
+        kCBAdvOptionAdvertisingInterval = 290;
+        kCBAdvOptionStopOnAdvertisingAddressChange = 1;
+        kCBMsgArgIsPrivilegedDaemon = 1;
+    }
+)
+2026-03-24 20:12:56.311899-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.XPC] Received XPC message "CBMsgIdStopAdvertising" from session "com.apple.bluetoothd-peripheral-61035-42"
+2026-03-24 20:12:56.311955-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Advertise] Received 'stop advertising' request from session "com.apple.bluetoothd-peripheral-61035-42"
+2026-03-24 20:12:56.312035-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.Core] BT Stats for metric '<private>' sent to CoreAnalytics with result 0
+2026-03-24 20:12:56.312082-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.Core] BT Stats for metric '<private>' sent to CoreAnalytics with result 0
+2026-03-24 20:12:56.312167-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.XPC] Received XPC message "CBMsgIdStopAdvertising" from session "com.apple.bluetoothd-peripheral-61035-38"
+2026-03-24 20:12:56.312175-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Advertise] background advertising sessions:AppleMFG:0 Extended:0
+[31m2026-03-24 20:12:56.312215-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] [Privacy] Did stop advertising with error: (null)[0m
+2026-03-24 20:12:56.312236-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Stack.LE]  StopAdvertising tech=0
+2026-03-24 20:12:56.312270-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Stack.LE]  Address rotation in progress:NO
+2026-03-24 20:12:56.312410-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Advertise] Advertising state change:  Advertising(2) --> Stopping(3) stack:ON
+2026-03-24 20:12:56.312489-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Advertise] Received 'stop advertising' request from session "com.apple.bluetoothd-peripheral-61035-38"
+2026-03-24 20:12:56.312586-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.Core] BT Stats for metric '<private>' sent to CoreAnalytics with result 0
+2026-03-24 20:12:56.312662-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.XPC] Received XPC message "CBMsgIdStartAdvertising" from session "com.apple.bluetoothd-peripheral-61035-42"
+[31m2026-03-24 20:12:56.312711-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] [Privacy] Did stop advertising with error: (null)[0m
+2026-03-24 20:12:56.312745-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.XPC] Setting client list to <private>
+2026-03-24 20:12:56.312805-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Advertise] Received 'start advertising' request from session "com.apple.bluetoothd-peripheral-61035-42", with manufacturer data [ 1B FF 4C 00 0C 0E 08 4E 03 AE 22 E3 7A 86 0E 2C 56 09 E5 18 10 06 4F 1D A2 D3 20 58 ], interval 122, no name
+2026-03-24 20:12:56.312835-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Advertise] Calling updateAdvertisement
+2026-03-24 20:12:56.312896-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.XPC] Received XPC message "CBMsgIdStartAdvertising" from session "com.apple.bluetoothd-peripheral-61035-38"
+2026-03-24 20:12:56.312955-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.XPC] Setting client list to <private>
+[31m2026-03-24 20:12:56.312982-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Started to advertise for type 9 with error (null)[0m
+2026-03-24 20:12:56.312998-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Advertise] Received 'start advertising' request from session "com.apple.bluetoothd-peripheral-61035-38", with manufacturer data [ 17 FF 4C 00 09 08 13 EC C0 A8 01 C6 1B 58 16 08 00 49 94 AF F7 DA 1F DB ], interval 122, no name
+2026-03-24 20:12:56.313025-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Advertise] Calling updateAdvertisement
+[31m2026-03-24 20:12:56.313030-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Started to advertise for type 12 with error (null)[0m
+2026-03-24 20:12:56.313060-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Advertising started for client <private> (418) of type 12
+[31m2026-03-24 20:12:56.313116-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Started to advertise for type 16 with error (null)[0m
+2026-03-24 20:12:56.313151-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Advertising started for client <private> (459) of type 16
+[31m2026-03-24 20:12:56.313199-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] Started to advertise for type 22 with error (null)[0m
+2026-03-24 20:12:56.313265-0700  localhost identityservicesd[418]: [com.apple.Transport:WPLinkManager] calling continuityDidStartAdvertisingOfType:Activity
+2026-03-24 20:12:56.314624-0700  localhost sharingd[459]: Created Activity ID: 0xb4b959, Description: Sharing/SDActivityAdvertiser/continuityDidStartAdvertisingOfType
+2026-03-24 20:12:56.317386-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Stack.LE]  Address rotation in progress:NO
+2026-03-24 20:12:56.317455-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Advertise] Stopped advertising successfully status=0
+2026-03-24 20:12:56.317485-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Advertise] Advertising state change:  Stopping(3) --> Idle(0) stack:ON
+2026-03-24 20:12:56.317540-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Advertise] background advertising sessions:AppleMFG:0 Extended:0
+2026-03-24 20:12:56.317595-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Stack.LE]  StartAdvertising tech=0 handle=0
+2026-03-24 20:12:56.317619-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Stack.LE]  Address rotation in progress:NO
+2026-03-24 20:12:56.317667-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Advertise] Advertising state change:  Idle(0) --> Starting(1) stack:ON
+2026-03-24 20:12:56.320287-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Stack.LE]  Address rotation in progress:NO
+2026-03-24 20:12:56.320319-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Stack.LE]  StartAdvertising tech=0 handle=2
+2026-03-24 20:12:56.320339-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Stack.LE]  Address rotation in progress:NO
+2026-03-24 20:12:56.322667-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Stack.LE]  Address rotation in progress:NO
+2026-03-24 20:12:56.322718-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Stack.LE]  StartAdvertising tech=0 handle=3
+2026-03-24 20:12:56.322746-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Stack.LE]  Address rotation in progress:NO
+2026-03-24 20:12:56.325853-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Stack.LE]  Address rotation in progress:NO
+2026-03-24 20:12:56.325897-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Stack.LE]  StartAdvertising tech=0 handle=4
+2026-03-24 20:12:56.325924-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Stack.LE]  Address rotation in progress:NO
+2026-03-24 20:12:56.327291-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Stack.LE]  Address rotation in progress:NO
+2026-03-24 20:12:56.327354-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Advertise] Started advertising successfully status=0
+2026-03-24 20:12:56.327382-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Advertise] Advertising state change:  Starting(1) --> Advertising(2) stack:ON
+2026-03-24 20:12:56.327430-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Advertise] background advertising sessions:AppleMFG:0 Extended:0
+2026-03-24 20:12:56.516644-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Advertise] background advertising sessions:AppleMFG:0 Extended:0
+2026-03-24 20:12:56.534737-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice D3568EC4-CAF3-1050-F618-93A317B71B16, BDA 73:47:A2:E3:0F:AC, Nm 'Bluetooth Device', DsFl 0x40 < NearbyInfo >, DvF 0x40000000000 < Connectable >, RSSI -79, Ch 37, AdTsMC <489442019037>, AMfD <4c 00 10 07 23 1f ca bf ec 36 18>, nbIAT <ca bf ec>, nbIF 0x13C2 < Ranging AT Duet WiFiP2P HtSp Stat >, CF 0x200000000 < RSSI >
+[31m2026-03-24 20:12:56.535344-0700  localhost sharingd[459]: (CoreUtils) [com.apple.sharing:SDNearbyAgentCore] ### Unable to decrypt activity level with authTag yes identity no error 0 for device SFDevice ID bb00ca66-2f2e-1000-8000-001ff3fb80df, RSSI -79 (-76)~F, DuetSync, WiFiP2P, DF 0x20 < Ranging >, DT Generic, AcLv ? (16)[0m
+2026-03-24 20:12:56.535670-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice D3568EC4-CAF3-1050-F618-93A317B71B16, BDA 73:47:A2:E3:0F:AC, Nm 'Bluetooth Device', DsFl 0x40 < NearbyInfo >, DvF 0x40000000000 < Connectable >, RSSI -79, Ch 37, AdTsMC <489442020033>, AMfD <4c 00 10 07 23 1f ca bf ec 36 18>, nbIAT <ca bf ec>, nbIF 0x13C2 < Ranging AT Duet WiFiP2P HtSp Stat >, CF 0x200000000 < RSSI >
+[31m2026-03-24 20:12:56.536144-0700  localhost sharingd[459]: (CoreUtils) [com.apple.sharing:SDNearbyAgentCore] ### Unable to decrypt activity level with authTag yes identity no error 0 for device SFDevice ID bb00ca66-2f2e-1000-8000-001ff3fb80df, RSSI -79 (-76)~F, DuetSync, WiFiP2P, DF 0x20 < Ranging >, DT Generic, AcLv ? (16)[0m
+2026-03-24 20:12:56.561998-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice 19D88E47-E482-88DA-CAD6-244AF2231427, BDA 61:8D:1A:03:C4:CF, Nm 'Bluetooth Device', DsFl 0x40 < NearbyInfo >, DvF 0x40000000000 < Connectable >, RSSI -51, Ch 37, AdTsMC <489442046421>, AMfD <4c 00 10 06 34 1e bb 9d eb 59>, nbIAT <bb 9d eb>, nbIF 0x3C6 < Ranging Me AT Duet WiFiP2P HtSp >, CF 0x200000000 < RSSI >
+[31m2026-03-24 20:12:56.562486-0700  localhost sharingd[459]: (CoreUtils) [com.apple.sharing:SDNearbyAgentCore] ### Unable to decrypt activity level with authTag yes identity no error 0 for device SFDevice ID bb0067c7-fa9a-1000-8000-001ff3fb80df, RSSI -51 (-50)*N, DuetSync, WiFiP2P, DF 0x30 < PeerMe Ranging >, DT Generic, AcLv ? (16)[0m
+2026-03-24 20:12:56.563069-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice 19D88E47-E482-88DA-CAD6-244AF2231427, BDA 61:8D:1A:03:C4:CF, Nm 'Bluetooth Device', DsFl 0x40 < NearbyInfo >, DvF 0x40000000000 < Connectable >, RSSI -51, Ch 37, AdTsMC <489442047485>, AMfD <4c 00 10 06 34 1e bb 9d eb 59>, nbIAT <bb 9d eb>, nbIF 0x3C6 < Ranging Me AT Duet WiFiP2P HtSp >, CF 0x200000000 < RSSI >
+[31m2026-03-24 20:12:56.563361-0700  localhost sharingd[459]: (CoreUtils) [com.apple.sharing:SDNearbyAgentCore] ### Unable to decrypt activity level with authTag yes identity no error 0 for device SFDevice ID bb0067c7-fa9a-1000-8000-001ff3fb80df, RSSI -51 (-50)*N, DuetSync, WiFiP2P, DF 0x30 < PeerMe Ranging >, DT Generic, AcLv ? (16)[0m
+2026-03-24 20:12:56.613612-0700  localhost taskgated[639]: (libsqlite3.dylib) [com.apple.libsqlite3:logging-persist] cannot open file at line 49455 of [1b37c146ee]
+2026-03-24 20:12:56.613699-0700  localhost taskgated[639]: (libsqlite3.dylib) [com.apple.libsqlite3:logging-persist] os_unix.c:49455: (2) open(/private/var/db/DetachedSignatures) - No such file or directory
+[31m2026-03-24 20:12:56.613796-0700  localhost taskgated[639]: (Security) [com.apple.securityd:security_exception] MacOS error: -67062[0m
+2026-03-24 20:12:56.614015-0700  localhost syspolicyd[300]: [com.apple.syspolicy.exec:default] Found provenance data on process: TA(16a1fd9dd641b251, 2), 67766
+2026-03-24 20:12:56.615209-0700  localhost syspolicyd[300]: [com.apple.syspolicy.exec:default] Process was already in provenance sandbox, skipping: 67766, TA(16a1fd9dd641b251, 2)
+2026-03-24 20:12:56.615271-0700  localhost taskgated[639]: (libsqlite3.dylib) [com.apple.libsqlite3:logging-persist] cannot open file at line 49455 of [1b37c146ee]
+2026-03-24 20:12:56.615328-0700  localhost taskgated[639]: (libsqlite3.dylib) [com.apple.libsqlite3:logging-persist] os_unix.c:49455: (2) open(/private/var/db/DetachedSignatures) - No such file or directory
+[31m2026-03-24 20:12:56.615413-0700  localhost taskgated[639]: (Security) [com.apple.securityd:security_exception] MacOS error: -67062[0m
+2026-03-24 20:12:56.615627-0700  localhost syspolicyd[300]: [com.apple.syspolicy.exec:default] Found provenance data on process: TA(16a1fd9dd641b251, 2), 67767
+2026-03-24 20:12:56.615775-0700  localhost syspolicyd[300]: [com.apple.syspolicy.exec:default] Process was already in provenance sandbox, skipping: 67767, TA(16a1fd9dd641b251, 2)
+2026-03-24 20:12:56.628146-0700  localhost taskgated[639]: (libsqlite3.dylib) [com.apple.libsqlite3:logging-persist] cannot open file at line 49455 of [1b37c146ee]
+2026-03-24 20:12:56.628198-0700  localhost taskgated[639]: (libsqlite3.dylib) [com.apple.libsqlite3:logging-persist] os_unix.c:49455: (2) open(/private/var/db/DetachedSignatures) - No such file or directory
+[31m2026-03-24 20:12:56.628277-0700  localhost taskgated[639]: (Security) [com.apple.securityd:security_exception] MacOS error: -67062[0m
+2026-03-24 20:12:56.628485-0700  localhost syspolicyd[300]: [com.apple.syspolicy.exec:default] Found provenance data on process: TA(16a1fd9dd641b251, 2), 67768
+2026-03-24 20:12:56.629188-0700  localhost syspolicyd[300]: [com.apple.syspolicy.exec:default] Process was already in provenance sandbox, skipping: 67768, TA(16a1fd9dd641b251, 2)
+2026-03-24 20:12:56.629630-0700  localhost taskgated[639]: (libsqlite3.dylib) [com.apple.libsqlite3:logging-persist] cannot open file at line 49455 of [1b37c146ee]
+2026-03-24 20:12:56.629689-0700  localhost taskgated[639]: (libsqlite3.dylib) [com.apple.libsqlite3:logging-persist] os_unix.c:49455: (2) open(/private/var/db/DetachedSignatures) - No such file or directory
+[31m2026-03-24 20:12:56.629774-0700  localhost taskgated[639]: (Security) [com.apple.securityd:security_exception] MacOS error: -67062[0m
+2026-03-24 20:12:56.629968-0700  localhost syspolicyd[300]: [com.apple.syspolicy.exec:default] Found provenance data on process: TA(16a1fd9dd641b251, 2), 67769
+2026-03-24 20:12:56.630019-0700  localhost syspolicyd[300]: [com.apple.syspolicy.exec:default] Process was already in provenance sandbox, skipping: 67769, TA(16a1fd9dd641b251, 2)
+2026-03-24 20:12:56.721824-0700  localhost runningboardd[199]: (RunningBoard) Created Activity ID: 0xb4cb05, Description: invalidateAssertionWithIdentifier
+2026-03-24 20:12:56.721982-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:ttl] Invalidating assertion 199-67304-112216 (target:[xpcservice<com.apple.iCloudHelper(no host)(502)>{vt hash: 0}:67304:67304]) from originator [xpcservice<com.apple.iCloudHelper(no host)(502)>{vt hash: 0}:67304:67304]
+2026-03-24 20:12:56.749158-0700  localhost PerfPowerServices[46526]: (CoreLocation) Created Activity ID: 0xb4c06e, Description: CL: CLCopyAppsUsingLocation
+2026-03-24 20:12:56.749214-0700  localhost PerfPowerServices[46526]: (CoreLocation) [com.apple.locationd.Core:Client] {"msg":"CLCopyAppsUsingLocation", "event":"activity"}
+2026-03-24 20:12:56.748971-0700  localhost locationd[166]: Created Activity ID: 0xb4cadd, Description: CL: notifyClientsWithData (Fallback)
+2026-03-24 20:12:56.752783-0700  localhost locationd[166]: (CFOpenDirectory) Created Activity ID: 0xb4cade, Description: Open a given node
+2026-03-24 20:12:56.754298-0700  localhost locationd[166]: (CFOpenDirectory) Created Activity ID: 0xb4cadf, Description: Querying records from directories
+2026-03-24 20:12:56.757878-0700  localhost locationd[166]: (CFOpenDirectory) Created Activity ID: 0xb4cb70, Description: Closing a node reference
+2026-03-24 20:12:56.837812-0700  localhost dasd[171]: [com.apple.duetactivityscheduler:lifecycle] Attempting to suspend based on triggers: (     "com.apple.duetactivityscheduler.photospolicy.appchanged",     "com.apple.das.apppolicy.appInFocus",     "com.apple.das.apppolicy.appchanged" )
+2026-03-24 20:12:56.837977-0700  localhost dasd[171]: [com.apple.duetactivityscheduler:default] Ignoring trigger com.apple.duetactivityscheduler.photospolicy.appchanged, conditions are worse
+2026-03-24 20:12:56.838124-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice 19D88E47-E482-88DA-CAD6-244AF2231427, BDA 61:8D:1A:03:C4:CF, Nm 'Bluetooth Device', DsFl 0x40 < NearbyInfo >, DvF 0x40000000000 < Connectable >, RSSI -54, Ch 38, AdTsMC <489442322127>, AMfD <4c 00 10 06 34 1e bb 9d eb 59>, nbIAT <bb 9d eb>, nbIF 0x3C6 < Ranging Me AT Duet WiFiP2P HtSp >, CF 0x200000000 < RSSI >
+2026-03-24 20:12:56.838307-0700  localhost dasd[171]: (CoreDuetContext) Created Activity ID: 0xb4cae4, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+[31m2026-03-24 20:12:56.838738-0700  localhost sharingd[459]: (CoreUtils) [com.apple.sharing:SDNearbyAgentCore] ### Unable to decrypt activity level with authTag yes identity no error 0 for device SFDevice ID bb0067c7-fa9a-1000-8000-001ff3fb80df, RSSI -54 (-50)*N, DuetSync, WiFiP2P, DF 0x30 < PeerMe Ranging >, DT Generic, AcLv ? (16)[0m
+2026-03-24 20:12:56.838905-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice 19D88E47-E482-88DA-CAD6-244AF2231427, BDA 61:8D:1A:03:C4:CF, Nm 'Bluetooth Device', DsFl 0x40 < NearbyInfo >, DvF 0x40000000000 < Connectable >, RSSI -54, Ch 38, AdTsMC <489442323138>, AMfD <4c 00 10 06 34 1e bb 9d eb 59>, nbIAT <bb 9d eb>, nbIF 0x3C6 < Ranging Me AT Duet WiFiP2P HtSp >, CF 0x200000000 < RSSI >
+[31m2026-03-24 20:12:56.839395-0700  localhost sharingd[459]: (CoreUtils) [com.apple.sharing:SDNearbyAgentCore] ### Unable to decrypt activity level with authTag yes identity no error 0 for device SFDevice ID bb0067c7-fa9a-1000-8000-001ff3fb80df, RSSI -54 (-51)*N, DuetSync, WiFiP2P, DF 0x30 < PeerMe Ranging >, DT Generic, AcLv ? (16)[0m
+2026-03-24 20:12:56.839633-0700  localhost dasd[171]: (CoreDuetContext) Created Activity ID: 0xb4cae5, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:56.840337-0700  localhost dasd[171]: [com.apple.duetactivityscheduler:lifecycle] Evaluating 30 activities based on triggers
+2026-03-24 20:12:56.840420-0700  localhost dasd[171]: (CoreDuetContext) Created Activity ID: 0xb4cae6, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:56.840918-0700  localhost dasd[171]: (CoreDuetContext) Created Activity ID: 0xb4cae7, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:56.841332-0700  localhost dasd[171]: (CoreDuetContext) Created Activity ID: 0xb4cae8, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:56.841863-0700  localhost dasd[171]: [com.apple.DuetActivityScheduler:ApplicationPolicy] Processing query request for <private>
+2026-03-24 20:12:56.842561-0700  localhost dasd[171]: [com.apple.duetactivityscheduler:scoring] 502:com.apple.siri.metrics.ExperimentationExtension.hourly:0B42D5:[
+	{name: Device Activity Policy, policyWeight: 20.000, response: {33, 0.00, [{deviceActivity == 1}]}}
+ ], Decision: MNP}
+2026-03-24 20:12:56.844402-0700  localhost dasd[171]: (CoreDuetContext) Created Activity ID: 0xb4cae9, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:56.845081-0700  localhost dasd[171]: [com.apple.DuetActivityScheduler:ApplicationPolicy] Processing query request for <private>
+2026-03-24 20:12:56.845553-0700  localhost dasd[171]: [com.apple.duetactivityscheduler:scoring] 502:com.apple.siri.metrics.AssetMetricsExtension.hourly:68458F:[
+	{name: Device Activity Policy, policyWeight: 20.000, response: {33, 0.00, [{deviceActivity == 1}]}}
+ ], Decision: MNP}
+2026-03-24 20:12:56.845656-0700  localhost dasd[171]: (CoreDuetContext) Created Activity ID: 0xb4caea, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:56.846162-0700  localhost dasd[171]: [com.apple.DuetActivityScheduler:ApplicationPolicy] Processing query request for <private>
+2026-03-24 20:12:56.846523-0700  localhost dasd[171]: [com.apple.duetactivityscheduler:scoring] 502:com.apple.siri.ODDIPoirotMetricsExtension.scorecard.hourly:A431E5:[
+	{name: Device Activity Policy, policyWeight: 20.000, response: {33, 0.00, [{deviceActivity == 1}]}}
+ ], Decision: MNP}
+2026-03-24 20:12:56.846623-0700  localhost dasd[171]: (CoreDuetContext) Created Activity ID: 0xb4caeb, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:56.847111-0700  localhost dasd[171]: [com.apple.DuetActivityScheduler:ApplicationPolicy] Processing query request for <private>
+2026-03-24 20:12:56.847462-0700  localhost dasd[171]: [com.apple.duetactivityscheduler:scoring] 502:com.apple.siri.metrics.DevicePropertiesExtension.hourly:7C3C15:[
+	{name: Device Activity Policy, policyWeight: 20.000, response: {33, 0.00, [{deviceActivity == 1}]}}
+ ], Decision: MNP}
+2026-03-24 20:12:56.847561-0700  localhost dasd[171]: (CoreDuetContext) Created Activity ID: 0xb4caec, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:56.848064-0700  localhost dasd[171]: [com.apple.DuetActivityScheduler:ApplicationPolicy] Processing query request for <private>
+2026-03-24 20:12:56.848437-0700  localhost dasd[171]: [com.apple.duetactivityscheduler:scoring] 502:com.apple.siri.ODDI.scorecard.hourly:0F254C:[
+	{name: Device Activity Policy, policyWeight: 20.000, response: {33, 0.00, [{deviceActivity == 1}]}}
+ ], Decision: MNP}
+2026-03-24 20:12:56.848547-0700  localhost dasd[171]: (CoreDuetContext) Created Activity ID: 0xb4caed, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:56.849050-0700  localhost dasd[171]: [com.apple.DuetActivityScheduler:ApplicationPolicy] Processing query request for <private>
+2026-03-24 20:12:56.849471-0700  localhost dasd[171]: [com.apple.duetactivityscheduler:scoring] 502:com.apple.siri.metrics.MetricsExtension.scorecard.hourly:CFA444:[
+	{name: Device Activity Policy, policyWeight: 20.000, response: {33, 0.00, [{deviceActivity == 1}]}}
+ ], Decision: MNP}
+2026-03-24 20:12:56.866655-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice B4B1B1EF-89E2-FC1A-4B86-038E62D5384D, BDA 6F:23:6B:44:6C:F6, Nm 'Living Room', Md AppleTV6,2, IDS 64F2F16B-17CC-4D34-AD34-A9C8B1C918B6, stID 64F2F16B-17CC-4D34-AD34-A9C8B1C918B6, DsFl 0x8000000000 < AirPlayTarget >, DsTy <NearbyInfoV2, MiLo>, DvF 0x40000000800 < SystemPaired Connectable >, RSSI -86, Ch 38, AdTsMC <489442350844>, AMfD <4c 00 09 08 13 5e c0 a8 01 45 1b 58 16 08 00 25 52 6a c1 6d 7d 4d>, apTC 94, apTF 0x13 < SupportsAWDLSolo SupportsMediaControl HasPort >, apTI 192.168.1.69, apTP 7000, nb2Fe 0x4 < MiLo >, nb2A <52 6a c1>, nb2Ai <6d 7d 4d>, CF 0x200000000 < RSSI >
+2026-03-24 20:12:56.866942-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice B4B1B1EF-89E2-FC1A-4B86-038E62D5384D, BDA 6F:23:6B:44:6C:F6, Nm 'Living Room', Md AppleTV6,2, IDS 64F2F16B-17CC-4D34-AD34-A9C8B1C918B6, stID 64F2F16B-17CC-4D34-AD34-A9C8B1C918B6, DsFl 0x8000000000 < AirPlayTarget >, DsTy <NearbyInfoV2, MiLo>, DvF 0x40000000800 < SystemPaired Connectable >, RSSI -86, Ch 38, AdTsMC <489442351420>, AMfD <4c 00 09 08 13 5e c0 a8 01 45 1b 58 16 08 00 25 52 6a c1 6d 7d 4d>, apTC 94, apTF 0x13 < SupportsAWDLSolo SupportsMediaControl HasPort >, apTI 192.168.1.69, apTP 7000, nb2Fe 0x4 < MiLo >, nb2A <52 6a c1>, nb2Ai <6d 7d 4d>, CF 0x200000000 < RSSI >
+2026-03-24 20:12:56.893437-0700  localhost runningboardd[199]: (RunningBoard) Created Activity ID: 0xb4cb06, Description: state update
+2026-03-24 20:12:56.893641-0700  localhost runningboardd[199]: (RunningBoard) Created Activity ID: 0xb4cb07, Description: state notification
+2026-03-24 20:12:56.893868-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [xpcservice<com.apple.iCloudHelper(no host)(502)>{vt hash: 0}:67304:67304] Ignoring jetsam update because this process is not memory-managed
+2026-03-24 20:12:56.893925-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [xpcservice<com.apple.iCloudHelper(no host)(502)>{vt hash: 0}:67304:67304] Ignoring suspend because this process is not lifecycle managed
+2026-03-24 20:12:56.893959-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [xpcservice<com.apple.iCloudHelper(no host)(502)>{vt hash: 0}:67304:67304] Ignoring role changes because this process is not role managed
+2026-03-24 20:12:56.893989-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [xpcservice<com.apple.iCloudHelper(no host)(502)>{vt hash: 0}:67304:67304] Ignoring GPU update because this process is not GPU managed
+2026-03-24 20:12:56.894019-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [xpcservice<com.apple.iCloudHelper(no host)(502)>{vt hash: 0}:67304:67304] Ignoring memory limit update because this process is not memory-managed
+2026-03-24 20:12:56.894337-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:power] Released last power assertion
+2026-03-24 20:12:56.894401-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] Shutdown sockets for all suspended processes
+[31m2026-03-24 20:12:56.897043-0700  localhost kernel[0]: necp_process_defunct_list: necp_update_client abort nexus error (2) for pid 741 StocksWidget[0m
+[31m2026-03-24 20:12:56.897055-0700  localhost kernel[0]: necp_process_defunct_list: necp_update_client abort nexus error (2) for pid 741 StocksWidget[0m
+[31m2026-03-24 20:12:56.897260-0700  localhost kernel[0]: necp_process_defunct_list: necp_update_client abort nexus error (2) for pid 740 NewsToday2[0m
+2026-03-24 20:12:56.897897-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:ttl] Released power assertion with ID 40673
+2026-03-24 20:12:57.103186-0700  localhost mds[147]: (CoreDuetContext) Created Activity ID: 0xb4ca79, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:57.103962-0700  localhost mds[147]: (CoreDuetContext) Created Activity ID: 0xb4ca7a, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:57.106614-0700  localhost mds[147]: (CoreDuetContext) Created Activity ID: 0xb4ca7b, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:57.107091-0700  localhost mds[147]: (CoreDuetContext) Created Activity ID: 0xb4ca7c, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:57.107481-0700  localhost mds[147]: (CoreDuetContext) Created Activity ID: 0xb4ca7d, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:57.107903-0700  localhost mds[147]: (CoreDuetContext) Created Activity ID: 0xb4ca7e, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:57.108332-0700  localhost mds[147]: (CoreDuetContext) Created Activity ID: 0xb4ca7f, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:57.108795-0700  localhost mds[147]: (CoreDuetContext) Created Activity ID: 0xb4cb80, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:57.109135-0700  localhost mds[147]: (CoreDuetContext) Created Activity ID: 0xb4cb81, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:57.109455-0700  localhost mds[147]: (CoreDuetContext) Created Activity ID: 0xb4cb82, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:57.118716-0700  localhost xpcproxy[67770]: (libsystem_info.dylib) Created Activity ID: 0xb4cb90, Description: Retrieve User by ID
+2026-03-24 20:12:57.119683-0700  localhost xpcproxy[67770]: (libsystem_info.dylib) Created Activity ID: 0xb4cb91, Description: Resolve user group list
+2026-03-24 20:12:57.120098-0700  localhost xpcproxy[67770]: (libsystem_info.dylib) Created Activity ID: 0xb4cb92, Description: Membership API: translate identifier
+2026-03-24 20:12:57.142356-0700  localhost cfprefsd[192]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fc48600a790] activating connection: mach=false listener=false peer=true name=com.apple.cfprefsd.daemon.peer[67770].0x7fc48600a790
+2026-03-24 20:12:57.142515-0700  localhost cfprefsd[402]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fbc6e912ff0] activating connection: mach=false listener=false peer=true name=com.apple.cfprefsd.agent.peer[67770].0x7fbc6e912ff0
+2026-03-24 20:12:57.191956-0700  localhost lsd[415]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa3dee30260] activating connection: mach=false listener=false peer=true name=com.apple.lsd.mapdb.peer[67770].0x7fa3dee30260
+2026-03-24 20:12:57.206694-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: isInfraRealtimePacketThresholdAllowed allowed:1 option:32 threshold:50 noRegistrations:1 cachedPeerCount:0 fastDiscoveryInactive:1 fastDiscoveryOnSince:386759051
+2026-03-24 20:12:57.206717-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: currentInfraTrafficType:8981 checking if realtime upgrade required with inputPackets:9 outputPackets:2 packetThreshold:50
+2026-03-24 20:12:57.206728-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: monitorInfraTraffic[9103] Infra Traffic type has changed from Real Time to None. AWDL is Off
+2026-03-24 20:12:57.206734-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: monitorInfraTraffic[9182]: Updating infra traffic state from Real Time to Transition Wait
+2026-03-24 20:12:57.307388-0700  localhost runningboardd[199]: (RunningBoard) Created Activity ID: 0xb4cb08, Description: invalidateAssertionWithIdentifier
+2026-03-24 20:12:57.307485-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:ttl] Invalidating assertion 199-132-112212 (target:[osservice<com.apple.coreservices.useractivityd(502)>:558]) from originator [osservice<com.apple.powerd>:132]
+2026-03-24 20:12:57.411754-0700  localhost runningboardd[199]: (RunningBoard) Created Activity ID: 0xb4cb09, Description: state update
+2026-03-24 20:12:57.411956-0700  localhost runningboardd[199]: (RunningBoard) Created Activity ID: 0xb4cb0a, Description: state notification
+2026-03-24 20:12:57.412200-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [osservice<com.apple.coreservices.useractivityd(502)>:558] Ignoring jetsam update because this process is not memory-managed
+2026-03-24 20:12:57.412249-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [osservice<com.apple.coreservices.useractivityd(502)>:558] Ignoring suspend because this process is not lifecycle managed
+2026-03-24 20:12:57.412281-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [osservice<com.apple.coreservices.useractivityd(502)>:558] Ignoring role changes because this process is not role managed
+2026-03-24 20:12:57.412310-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [osservice<com.apple.coreservices.useractivityd(502)>:558] Ignoring GPU update because this process is not GPU managed
+2026-03-24 20:12:57.412338-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [osservice<com.apple.coreservices.useractivityd(502)>:558] Ignoring memory limit update because this process is not memory-managed
+2026-03-24 20:12:57.412368-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [osservice<com.apple.coreservices.useractivityd(502)>:558] Skipping AppNap state - not lifecycle managed
+2026-03-24 20:12:57.423484-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: slow-wifi featureEnabled:1 Channel:36 chWidth:80 phyMode:128 nss:3 RSSI:-60 CCA:6 SNR:34 offChanDurUS:0 TVPMDurMS:0 concurrentIntDurMS:0 randomMac:1 dataStallScore:100 networkScore:100
+2026-03-24 20:12:57.423501-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: slow-wifi btAntDurMS:0 btESCO:0/0 rc1CoexDurMS:0 rc2CoexDurMS:0 lteCoexDurMS:0 totalNonWLANDurMS:0 infraDutyCycle:100 lastScanType:0
+2026-03-24 20:12:57.423505-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: slow-wifi availWLANDurMS:5012 availTxDurMS:4907 realTxDurMS:10 availRxDurMS:5002 realRxDurMS:105 measurementDurMS:5012 lastScanDurMS:0
+2026-03-24 20:12:57.423509-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: slow-wifi Tx tput (i/p:0 o/p:0 expected:0)Mbps queueFullDurMS:0 avgLatencyMS:1 maxLatencyMS:8 phyRate(mode:520 avg:443 expected:1004) phyRateTputRatio:0
+2026-03-24 20:12:57.423512-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: slow-wifi Tx AMPDUDensity(actual:1 expectedAtQueueFull:64) retries:27 fails:0 fwFrames:42 hostFrames:50 hostFails:0 ctlPkts:1(1642) symptomsFails:0
+2026-03-24 20:12:57.423515-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: slow-wifi TxLim[1] outputBelowExpected:0 outputBelowInput:0 lowTxFrameCount:1 queueFull:0 highLatency:0 baselineNotAllowed:0 highSymptomsFails:0
+2026-03-24 20:12:57.423519-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: slow-wifi TxLim[1] lowPhyRate:0 lowPhyRateTputRatio:0 highPER:0 highRetries:0 lowTxAMPDUDensity:1 lowCCA:1 activeCoex:0 hostFWMismatch:0
+2026-03-24 20:12:57.423522-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: slow-wifi Rx tput:0 Mbps baseline:0 Mbps overflows:0 fcsFail:2 plcpBad:1 goodPlcps:497 crsGlitches:6 fwFrames:511 ucastFWFrames:41 hostFrames:78 AmpduDUP:0 APTxDataStallPct:0 rxAmpduTxBaMismatch:0
+2026-03-24 20:12:57.423531-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: slow-wifi Rx ucast(replays:0 decryptErrs:0) mcast(replays:0 decryptErrs:0) phyRate(mode:780 avg:663 expected:1004) dups:0 retries:0 phyRateTputRatio:0
+2026-03-24 20:12:57.423535-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: slow-wifi RxLim[1] highRetries:0 highPhyPER:0 highDataPER:0 highOverflows:0 highRSSI:1 lowPhyRate:0 lowPhyRateTputRatio:0
+[31m2026-03-24 20:12:57.423539-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: slow-wifi RxLim[1] highFCSErrors:0 highDups:0 highReplays:0 highDecryptErrors:0 highMCDecryptErrors:0 lowRxFrameCount:1[0m
+2026-03-24 20:12:57.423542-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: UI Entry curState:Idle prevState:PendingIP event:ChannelQualityUpdate data:1
+2026-03-24 20:12:57.423545-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: UI Exit curState:Idle prevState:PendingIP
+2026-03-24 20:12:57.446551-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI-CT: rssi=-59(-65 -58) snr=35 bcn=48(49) txFrames=42 txRetry=27 txRate=292500 rxFrames=73 rxRetry=5 rxRate=780000 rxToss=0
+2026-03-24 20:12:57.446971-0700  localhost airportd[205]: (IO80211) [com.apple.WiFiManager:] Driver Event: <airport[205]> _bsd_80211_event_callback: APPLE80211_M_RSSI_CHANGED (en0)
+2026-03-24 20:12:57.449716-0700  localhost airportd[205]: (IO80211) airportdProcessTrafficEngineeringEvents: <en0> eventType[39] @[489442.934469], took 0.000040
+2026-03-24 20:12:57.450467-0700  localhost airportd[205]: (IO80211) [com.apple.WiFiManager:] <airport[205]> airportdProcessTrafficEngineeringEvents: <en0> eventType[39] @[489442.934469], took 0.000040
+2026-03-24 20:12:57.450161-0700  localhost airportd[205]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] LQM: rssi=-59dBm per_ant_rssi=(-65dBm, -58dBm) noise=-94dBm snr=35 cca=6.0% ccaSelfTotal=0 ccaOtherTotal=0 interferenceTotal=0 txRate=292.5Mbps txFrames=42 txFail=0 txRetrans=27 txFallbackRate=97.5Mbps rxRate=780.0Mbps rxFrames=73 rxRetryFrames=5 rxToss=0 beaconRecv=48 beaconSched=49 txFwFrames=13 txFwFail=0 txFwRetrans=0 network = <redacted> bssid = <redacted> channel = 36 BW = 80
+2026-03-24 20:12:57.452368-0700  localhost airportd[205]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] BEGIN REQ [GET INTF NAME] (pid=218 proc=symptomsd bundleID=com.apple.symptomsd codesignID=com.apple.symptomsd service=com.apple.private.corewifi-xpc qos=17 intf=(null) uuid=AA97F info=(null))
+2026-03-24 20:12:57.453386-0700  localhost airportd[205]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] [AA97F] Incoming QoS is less than 'default', promoting to 'default'
+2026-03-24 20:12:57.453746-0700  localhost airportd[205]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fd48e4bccb0] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-03-24 20:12:57.453844-0700  localhost airportd[205]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fd48e498a50] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-03-24 20:12:57.453915-0700  localhost airportd[205]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fd48e4c0e20] invalidated because the client process (pid 205) either cancelled the connection or exited
+2026-03-24 20:12:57.454245-0700  localhost airportd[205]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] BEGIN REQ [GET BSSID] (pid=218 proc=symptomsd bundleID=com.apple.symptomsd codesignID=com.apple.symptomsd service=com.apple.private.corewifi-xpc qos=17 intf=(null) uuid=8E801 info=(null))
+2026-03-24 20:12:57.453863-0700  localhost airportd[205]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] CWFInterface XPC connection invalidated (pid=205)
+2026-03-24 20:12:57.453777-0700  localhost airportd[205]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] END REQ [GET INTF NAME] took 0.000401600s (pid=218 proc=symptomsd bundleID=com.apple.symptomsd codesignID=com.apple.symptomsd service=com.apple.private.corewifi-xpc qos=17 intf=(null) uuid=AA97F err=0 reply=<redacted>
+2026-03-24 20:12:57.454375-0700  localhost airportd[205]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] [8E801] Incoming QoS is less than 'default', promoting to 'default'
+2026-03-24 20:12:57.455108-0700  localhost airportd[205]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] END REQ [GET BSSID] took 0.000760970s (pid=218 proc=symptomsd bundleID=com.apple.symptomsd codesignID=com.apple.symptomsd service=com.apple.private.corewifi-xpc qos=17 intf=(null) uuid=8E801 err=0 reply=<redacted>
+2026-03-24 20:12:57.475330-0700  localhost fseventsd[123]: (libsystem_info.dylib) Created Activity ID: 0xb4c282, Description: Resolve user group list
+2026-03-24 20:12:57.678556-0700  localhost sharingd[459]: (CoreUtils) [com.apple.sharing:SFBLEScanner] Prox: Clearing duplicate cache
+2026-03-24 20:12:57.678626-0700  localhost sharingd[459]: (WirelessProximity) [com.apple.bluetooth:WirelessProximity] ProximityPairing clear duplicate cache
+2026-03-24 20:12:57.678960-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] clear dup filter cache for process sharingd (459) with scan request of type 7, blob: {length = 0, bytes = 0x}, mask {length = 0, bytes = 0x}, active: 0, duplicates: 0, screen on: No Scan, screen off: No Scan, locked: 1,  rssi: -90, peers: (
+) nearby scan mode: 10, advbuf: 0, priority critical: 0, range: 0, usecases:
+2026-03-24 20:12:57.679049-0700  localhost bluetoothd[61035]: (WPDaemon) [com.apple.bluetooth:WirelessProximity] About to clearDuplicateFilterCache for type: 7
+2026-03-24 20:12:57.679153-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.XPC] Received XPC message "CBMsgIdClearDuplicateFilterCache" from session "com.apple.bluetoothd-central-61035-43"
+2026-03-24 20:12:57.679227-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] ShouldScan=1 AnyValidScanRequests=1 anyValidScanRequestInPaused=0 fObserverState=Active ClientScanPowerAssertRequired=0 fScanFiltersNeedUpdagint=0
+2026-03-24 20:12:57.679266-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] updateADVBufferConfig current:00 new:00 configChanged:00
+2026-03-24 20:12:57.679355-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] state 32
+2026-03-24 20:12:57.679415-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] NearbyInfo asking for duplicates? 1
+2026-03-24 20:12:57.679443-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] NearbyInfo asking for duplicates? 1
+2026-03-24 20:12:57.679469-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] NearbyInfo asking for duplicates? 1
+2026-03-24 20:12:57.679492-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] NearbyInfo asking for duplicates? 1
+2026-03-24 20:12:57.679522-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> allowDupes:1, agentAllowDupes:1, active:0
+2026-03-24 20:12:57.679547-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> active 0
+2026-03-24 20:12:57.679624-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] state 32
+2026-03-24 20:12:57.679669-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] Findmy usecase "FindMyNotOptedIn" is asking for duplicates? No
+2026-03-24 20:12:57.679698-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> allowDupes:1, agentAllowDupes:0, active:0
+2026-03-24 20:12:57.679724-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> active 0
+2026-03-24 20:12:57.679776-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] state 32
+2026-03-24 20:12:57.679840-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> allowDupes:1, agentAllowDupes:0, active:0
+2026-03-24 20:12:57.679866-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> active 0
+2026-03-24 20:12:57.679942-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] ScanParams: numScanAgents 4, combined params AD:1 AS:0 MSL:3 (30/300) PSV:1
+2026-03-24 20:12:57.679978-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] ScanParams: [com.apple.bluetoothd-central-61035-43] AP:0 AD:1(30/300) AS:0 RAS:0 DMN:1 FG:0 ADVBF:0 pBT:0|[com.apple.locationd-central-166-27] AP:0 AD:0(30/300) AS:0 RAS:0 DMN:1 FG:0 ADVBF:0 pBT:0|[CBDaemon-0x323D0024] AP:0 AD:0(30/300) AS:0 RAS:0 DMN:1 FG:0 ADVBF:0 pBT:0
+2026-03-24 20:12:57.680007-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] Returning scan parameters: Main:30.00ms/300.00ms LP:0.00ms/300.00ms(unsupported) SC:0.00ms/0.00ms/non-concurrent(unspported) Dm:(m:30/300) Cond:0:1:0 Sc:1 (passive) Dupfilter:Disabled minScanLevel:3 ENAssertion:N Pri:0/0
+2026-03-24 20:12:57.680064-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] needToRestart=1
+2026-03-24 20:12:57.680225-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.App] clearDuplicateFilterCache for session "com.apple.bluetoothd" type 7
+2026-03-24 20:12:57.681266-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] Scanning stopped successfully.  13 Advertising Events, 0 dropped pkts
+2026-03-24 20:12:57.681315-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] Scan state change:  Stopping(4) --> Idle(1)
+2026-03-24 20:12:57.681343-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] handleScanStoppedEvent state=Idle observerState=Active
+2026-03-24 20:12:57.681388-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] ShouldScan=1 AnyValidScanRequests=1 anyValidScanRequestInPaused=0 fObserverState=Active ClientScanPowerAssertRequired=0 fScanFiltersNeedUpdagint=0
+2026-03-24 20:12:57.681416-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] updateADVBufferConfig current:00 new:00 configChanged:00
+2026-03-24 20:12:57.681490-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] state 32
+2026-03-24 20:12:57.681544-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] NearbyInfo asking for duplicates? 1
+2026-03-24 20:12:57.681570-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] NearbyInfo asking for duplicates? 1
+2026-03-24 20:12:57.681593-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] NearbyInfo asking for duplicates? 1
+2026-03-24 20:12:57.681613-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] NearbyInfo asking for duplicates? 1
+2026-03-24 20:12:57.681640-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> allowDupes:1, agentAllowDupes:1, active:0
+2026-03-24 20:12:57.681663-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> active 0
+2026-03-24 20:12:57.681737-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] state 32
+2026-03-24 20:12:57.681775-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] Findmy usecase "FindMyNotOptedIn" is asking for duplicates? No
+2026-03-24 20:12:57.681802-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> allowDupes:1, agentAllowDupes:0, active:0
+2026-03-24 20:12:57.681825-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> active 0
+2026-03-24 20:12:57.681876-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] state 32
+2026-03-24 20:12:57.681938-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> allowDupes:1, agentAllowDupes:0, active:0
+2026-03-24 20:12:57.681962-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> active 0
+2026-03-24 20:12:57.682096-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] ScanParams: numScanAgents 4, combined params AD:1 AS:0 MSL:3 (30/300) PSV:1
+2026-03-24 20:12:57.682144-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] ScanParams: [com.apple.bluetoothd-central-61035-43] AP:0 AD:1(30/300) AS:0 RAS:0 DMN:1 FG:0 ADVBF:0 pBT:0|[com.apple.locationd-central-166-27] AP:0 AD:0(30/300) AS:0 RAS:0 DMN:1 FG:0 ADVBF:0 pBT:0|[CBDaemon-0x323D0024] AP:0 AD:0(30/300) AS:0 RAS:0 DMN:1 FG:0 ADVBF:0 pBT:0
+2026-03-24 20:12:57.682176-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] Returning scan parameters: Main:30.00ms/300.00ms LP:0.00ms/300.00ms(unsupported) SC:0.00ms/0.00ms/non-concurrent(unspported) Dm:(m:30/300) Cond:0:1:0 Sc:1 (passive) Dupfilter:Disabled minScanLevel:3 ENAssertion:N Pri:0/0
+2026-03-24 20:12:57.682229-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] needToRestart=0
+2026-03-24 20:12:57.682258-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] Starting passive scan (300.00ms/30.00ms) with duplicate filter disabled scNeed=0 stateO=0, retainDups=0 fScanFiltersNeedUpdating=NO
+2026-03-24 20:12:57.682288-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] overrideEnableGlobalDupFilter:0
+2026-03-24 20:12:57.682387-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] Scan state change:  Idle(1) --> Starting(2)
+2026-03-24 20:12:57.682443-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.BTDaemon] <private>
+2026-03-24 20:12:57.684122-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] Scanning started successfully
+2026-03-24 20:12:57.684170-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] Scan state change:  Starting(2) --> Scanning(3)
+2026-03-24 20:12:57.684207-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] ShouldScan=1 AnyValidScanRequests=1 anyValidScanRequestInPaused=0 fObserverState=Active ClientScanPowerAssertRequired=0 fScanFiltersNeedUpdagint=0
+2026-03-24 20:12:57.684254-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] updateADVBufferConfig current:00 new:00 configChanged:00
+2026-03-24 20:12:57.684332-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] state 32
+2026-03-24 20:12:57.684387-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] NearbyInfo asking for duplicates? 1
+2026-03-24 20:12:57.684413-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] NearbyInfo asking for duplicates? 1
+2026-03-24 20:12:57.684436-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] NearbyInfo asking for duplicates? 1
+2026-03-24 20:12:57.684456-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] NearbyInfo asking for duplicates? 1
+2026-03-24 20:12:57.684482-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> allowDupes:1, agentAllowDupes:1, active:0
+2026-03-24 20:12:57.684506-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> active 0
+2026-03-24 20:12:57.684579-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] state 32
+2026-03-24 20:12:57.684618-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] Findmy usecase "FindMyNotOptedIn" is asking for duplicates? No
+2026-03-24 20:12:57.684644-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> allowDupes:1, agentAllowDupes:0, active:0
+2026-03-24 20:12:57.684666-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> active 0
+2026-03-24 20:12:57.684743-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] state 32
+2026-03-24 20:12:57.684800-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> allowDupes:1, agentAllowDupes:0, active:0
+2026-03-24 20:12:57.684821-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] <private> active 0
+2026-03-24 20:12:57.684935-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] ScanParams: numScanAgents 4, combined params AD:1 AS:0 MSL:3 (30/300) PSV:1
+2026-03-24 20:12:57.684974-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] ScanParams: [com.apple.bluetoothd-central-61035-43] AP:0 AD:1(30/300) AS:0 RAS:0 DMN:1 FG:0 ADVBF:0 pBT:0|[com.apple.locationd-central-166-27] AP:0 AD:0(30/300) AS:0 RAS:0 DMN:1 FG:0 ADVBF:0 pBT:0|[CBDaemon-0x323D0024] AP:0 AD:0(30/300) AS:0 RAS:0 DMN:1 FG:0 ADVBF:0 pBT:0
+2026-03-24 20:12:57.685012-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] Returning scan parameters: Main:30.00ms/300.00ms LP:0.00ms/300.00ms(unsupported) SC:0.00ms/0.00ms/non-concurrent(unspported) Dm:(m:30/300) Cond:0:1:0 Sc:1 (passive) Dupfilter:Disabled minScanLevel:3 ENAssertion:N Pri:0/0
+2026-03-24 20:12:57.685061-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.LE.Scan] needToRestart=0
+2026-03-24 20:12:57.880355-0700  localhost WallpaperVideoExtension[522]: (MediaToolbox) [com.apple.coremedia:] <<<< FigVideoQueue >>>> FigVideoQueueGMStats: (0x7ff781204210) 0 frames enqueued in the last 6 seconds; 0 were suspended. sbuf queue contains 0 frames (0.000 sec), max PTS: nan; LWM: 1.000 HWM: 2.000. Timebase time 223.208, rate 0.00. (pid 522)
+2026-03-24 20:12:57.885550-0700  localhost WallpaperVideoExtension[522]: (MediaToolbox) [com.apple.coremedia:] <<<< FigVideoQueue >>>> FigVideoQueueGMStats: (0x7ff77e404e60) 0 frames enqueued in the last 6 seconds; 0 were suspended. sbuf queue contains 0 frames (0.000 sec), max PTS: nan; LWM: 1.000 HWM: 2.000. Timebase time 223.208, rate 0.00. (pid 522)
+2026-03-24 20:12:57.885780-0700  localhost WallpaperVideoExtension[522]: (MediaToolbox) [com.apple.coremedia:] <<<< FigVideoQueue >>>> FigVideoQueueGMStats: (0x7ff77e405b10) 0 frames enqueued in the last 6 seconds; 0 were suspended. sbuf queue contains 0 frames (0.000 sec), max PTS: nan; LWM: 1.000 HWM: 2.000. Timebase time 223.208, rate 0.00. (pid 522)
+2026-03-24 20:12:57.886056-0700  localhost WallpaperVideoExtension[522]: (MediaToolbox) [com.apple.coremedia:] <<<< FigVideoQueue >>>> FigVideoQueueGMStats: (0x7ff77e406310) 0 frames enqueued in the last 6 seconds; 0 were suspended. sbuf queue contains 0 frames (0.000 sec), max PTS: nan; LWM: 1.000 HWM: 2.000. Timebase time 223.208, rate 0.00. (pid 522)
+2026-03-24 20:12:58.057337-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice DAB0EF32-9492-7646-0AEF-88E254D1F659, BDA 60:57:C8:33:AD:D2, Nm 'abhi’s iPhone', Md iPhone16,1, IDS 30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD, stID 30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD, DsFl 0x800040 < NearbyInfo Pairing >, DvF 0x1B080 < SameAccount Hidden BLEPaired CloudPaired HIDGoodBehavior >, RSSI -38, Ch 39, CtInfo CBControllerInfo, BlSt Unknown, DcsS Unknown, Sync Status: Uploaded, FastLE v1, Allowed: no, InqS Unknown, LMPv 0 (Unknown), SSrv: 0x1D3BBB < HFP PhoneBook AVRCP A2DP HID WirelessiAP NetSharing MAP Gaming NetworkConsumer Braille LEA CarPlay AACP GATT >, BTv 5.3, AdTsMC <489443541547>, AMfD <4c 00 10 07 36 1f 55 85 77 2c 78>, nbIAT <55 85 77>, nbIF 0x13C6 < Ranging Me AT Duet WiFiP2P HtSp Stat >, CF 0x200000000 < RSSI >
+2026-03-24 20:12:58.057883-0700  localhost sharingd[459]: (CoreUtils) [com.apple.sharing:SDNearbyAgentCore] NearbyInfo received activity level: 0x3 after decryption
+2026-03-24 20:12:58.059142-0700  localhost rapportd[453]: (CoreUtils) [com.apple.rapport:RPRemoteDisplayDaemon] BLE device changed: SFDevice ID bb0000d2-78f8-1000-8000-001ff3fb80df, IDS BBjUxuFS, RSSI -38 (-36)*I, Nm BBegmDzb, Md BBZzJShv, AltDSID BBqkvACI, AID 'BBQffxqr', DuetSync, Hotspot 0x170, MRI 'BBAUNsch', MRtI 'BBWAqTqB', PairedBT, PairedSys Conjectured, rapportID BBjUxuFS, WiFiP2P, DF 0x29 < MyMe MyiCloud Ranging >, ARS Idle, DT Generic, AcLv Idle (3)
+2026-03-24 20:12:58.061520-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] CMContinuityCaptureDiscoverySession: [0x7fb7ada0cae0] Device RPRemoteDisplayDevice, AltDSID 'BBgYlDEl', IDS 'BBGmuMeM', PI 'BBGmuMeM', Nm 'BBqRyISo', Md 'BBhuCRhZ', CC 5, SF 0x880382 < BLE Personal DuetSync WiFiP2P Owner ApplePay > device state changed 20
+[31m2026-03-24 20:12:58.061610-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] <private> RapportErrorFlags : 0[0m
+2026-03-24 20:12:58.061660-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] <private> use sidecar
+2026-03-24 20:12:58.061744-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] <private> SidecarDevices : (
+    "IDS 30B2D4F6"
+)
+2026-03-24 20:12:58.061820-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] <private> RapportDevices : (
+    "RPRemoteDisplayDevice, AltDSID 'BBgYlDEl', IDS 'BBGmuMeM', PI 'BBGmuMeM', Nm 'BBqRyISo', Md 'BBhuCRhZ', CC 5, SF 0x880382 < BLE Personal DuetSync WiFiP2P Owner ApplePay >"
+)
+2026-03-24 20:12:58.061875-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] <private> allowedIdentifiers : {(
+    "30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD"
+)}
+2026-03-24 20:12:58.062054-0700  localhost SidecarRelay[48266]: [com.apple.sidecar:rapport] IDS 30B2D4F6: Device Changed <BLE Personal DuetSync WiFiP2P Owner ApplePay LocalDevice AirDropUsable MeDeviceIsMe MultiUserDevice [RSSI]>
+2026-03-24 20:12:58.061925-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] <private> Client Device Identifier:30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD Name:abhi’s iPhone Model:iPhone16,1 Wired:0 Wireless:1 Magic:0 Nearby:1 Capabilities:1 Version:18.6 devicePtr:0x7fb7adc35020 status 880382
+2026-03-24 20:12:58.062391-0700  localhost com.apple.cmio.registerassistantservice[188]: [com.apple.cmio:] RegisterAssistantService.m:2824:-[RegisterAssistantServer _preferenceValueForKey:pid:userDefaults:] [<private>] returning <private> : <private>
+2026-03-24 20:12:58.061970-0700  localhost ContinuityCaptureAgent[412]: (AVFCapture) [com.apple.cameracapture:] <<<< AVContinuityCaptureCapabilitiesCache >>>> +[AVContinuityCaptureCapabilitiesCache capabilitiesForIdentifier:]: Identifier: <private>
+2026-03-24 20:12:58.064318-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] <private> (30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD) using original capabilities
+2026-03-24 20:12:58.064380-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] <private> Support with rapport for 30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD
+2026-03-24 20:12:58.064521-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] <private> RapportDevices : (
+    "RPRemoteDisplayDevice, AltDSID 'BBgYlDEl', IDS 'BBGmuMeM', PI 'BBGmuMeM', Nm 'BBqRyISo', Md 'BBhuCRhZ', CC 5, SF 0x880382 < BLE Personal DuetSync WiFiP2P Owner ApplePay >"
+)
+2026-03-24 20:12:58.064582-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] <private> Client Device Identifier:30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD Name:abhi’s iPhone Model:iPhone16,1 Wired:0 Wireless:1 Magic:0 Nearby:1 Capabilities:1 Version:18.6 devicePtr:0x7fb7adb31840 status:880382 isDedicated:0
+2026-03-24 20:12:58.064631-0700  localhost ContinuityCaptureAgent[412]: (AVFCapture) [com.apple.cameracapture:] <<<< AVContinuityCaptureCapabilitiesCache >>>> +[AVContinuityCaptureCapabilitiesCache capabilitiesForIdentifier:]: Identifier: <private>
+2026-03-24 20:12:58.064769-0700  localhost com.apple.cmio.registerassistantservice[188]: [com.apple.cmio:] RegisterAssistantService.m:2824:-[RegisterAssistantServer _preferenceValueForKey:pid:userDefaults:] [<private>] returning <private> : <private>
+2026-03-24 20:12:58.065915-0700  localhost ContinuityCaptureAgent[412]: (AVFCapture) [com.apple.cameracapture:] <<<< AVContinuityCaptureCapabilitiesCache >>>> +[AVContinuityCaptureCapabilitiesCache storeCapabilities:forIdentifier:]: Identifier: <private>
+2026-03-24 20:12:58.066676-0700  localhost com.apple.cmio.registerassistantservice[188]: [com.apple.cmio:] RegisterAssistantService.m:2096:-[RegisterAssistantServer addRegisterExtensionConnection:]_block_invoke [<private>] setting <private> : <private>
+2026-03-24 20:12:58.067295-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] <private> Device CMContinuityCaptureTransportRapportDevice: 30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD [0x7fb7adc47f30] name abhi’s iPhone present
+2026-03-24 20:12:58.067468-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:device] -[CMContinuityCaptureTransportRapportDevice notifyDeviceStateChange]
+2026-03-24 20:12:58.067507-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] CMContinuityCaptureMagicStateMonitor: CMContinuityCaptureTransportRapportDevice: 30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD [0x7fb7adc47f30] [0x7fb7adc47fb0] magic:0 (usable:0 nearby:1 wired:0 skipNearByCheck:0) reported magic:0
+2026-03-24 20:12:58.067605-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:device] CMContinuityCaptureDeskcamVideoDevice: 30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD entity:2 [0x7fb7aca04ee0] keypath:wired object:CMContinuityCaptureTransportRapportDevice: 30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD [0x7fb7adc47f30]
+2026-03-24 20:12:58.067606-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:device] <private> -[CMContinuityCaptureCompositeDevice _observeValueForKeyPath:ofObject:change:context:] deviceStatus
+2026-03-24 20:12:58.067690-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] CMContinuityCaptureMagicStateMonitor: CMContinuityCaptureTransportRapportDevice: 30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD [0x7fb7adc47f30] [0x7fb7adc47fb0] magic:0 (usable:0 nearby:1 wired:0 skipNearByCheck:0) reported magic:0
+2026-03-24 20:12:58.067704-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:device] CMContinuityCaptureVideoDevice: 30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD entity:1 [0x7fb7add28be0] keypath:wired object:CMContinuityCaptureTransportRapportDevice: 30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD [0x7fb7adc47f30]
+2026-03-24 20:12:58.067783-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:provider] <private> begin tracking <private>
+2026-03-24 20:12:58.067792-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] CMContinuityCaptureMagicStateMonitor: CMContinuityCaptureTransportRapportDevice: 30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD [0x7fb7adc47f30] [0x7fb7adc47fb0] magic:0 (usable:0 nearby:1 wired:0 skipNearByCheck:0) reported magic:0
+2026-03-24 20:12:58.067831-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] <private> Support with rapport for 30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD
+2026-03-24 20:12:58.067852-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] CMContinuityCaptureMagicStateMonitor: CMContinuityCaptureTransportRapportDevice: 30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD [0x7fb7adc47f30] [0x7fb7adc47fb0] magic:0 (usable:0 nearby:1 wired:0 skipNearByCheck:0) reported magic:0
+2026-03-24 20:12:58.067889-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] <private> updated compatible device list {
+    "30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD" = "CMContinuityCaptureTransportRapportDevice: 30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD [0x7fb7adc47f30]";
+}
+2026-03-24 20:12:58.068026-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:provider] <private> CurrentDevices : (
+    "CMContinuityCaptureTransportRapportDevice: 30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD [0x7fb7adc47f30]"
+)
+2026-03-24 20:12:58.068038-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:default] <private> updated device list (
+    "CMContinuityCaptureTransportRapportDevice: 30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD [0x7fb7adc47f30]"
+)
+2026-03-24 20:12:58.068088-0700  localhost ContinuityCaptureAgent[412]: (CMContinuityCaptureCore) [com.apple.CMContinuityCapture:provider] <private> Device (30B2D4F6-11D4-43FF-99E4-1F3166D8A1CD) present
+2026-03-24 20:12:58.204234-0700  localhost distnoted[400]: [com.apple.distnoted:diagnostic] unregister token: 10400000055 pid: 61846
+2026-03-24 20:12:58.230821-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: isInfraRealtimePacketThresholdAllowed allowed:1 option:32 threshold:50 noRegistrations:1 cachedPeerCount:0 fastDiscoveryInactive:1 fastDiscoveryOnSince:386760075
+2026-03-24 20:12:58.230839-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: currentInfraTrafficType:8981 checking if realtime upgrade required with inputPackets:11 outputPackets:9 packetThreshold:50
+2026-03-24 20:12:58.230862-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: monitorInfraTraffic[9103] Infra Traffic type has changed from Transition Wait to None. AWDL is Off
+2026-03-24 20:12:58.230865-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: monitorInfraTraffic[9182]: Updating infra traffic state from Transition Wait to Idle
+2026-03-24 20:12:58.257504-0700  localhost kernel[0]: udp connect: [<IPv6-redacted>:0<-><IPv6-redacted>:0] interface:  (skipped: 95364)
+so_gencnt: 4220306 so_state: 0x0100 process: Google Chrome He:550 bytes in/out: 0/0 pkts in/out: 0/0 error: 65 so_error: 0 svc/tc: 0 flow: 0x0
+2026-03-24 20:12:58.257524-0700  localhost kernel[0]: udp_connection_summary [<IPv6-redacted>:0<-><IPv6-redacted>:0] interface:  (skipped: 95364)
+so_gencnt: 4220306 so_state: 0x0100 process: Google Chrome He:550 Duration: 0.000 sec Conn_Time: 0.000 sec bytes in/out: 0/0 pkts in/out: 0/0 rxnospace pkts/bytes: 0/0 so_error: 0 svc/tc: 0 flow: 0x0flowctl: 0us (0x)
+2026-03-24 20:12:58.258531-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [R115754] DNSServiceQueryRecord START -- qname: <mask.hash: 'xUBnkBc8U0vlJEa1d6LFsw=='>, qtype: A, flags: 0x1D000, interface index: 0, client pid: 550 (Google Chrome H), name hash: e242e56
+2026-03-24 20:12:58.259075-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [R115754->Q33709] Question assigned DNS service 1066
+[31m2026-03-24 20:12:58.259588-0700  localhost mDNSResponder[212]: [com.apple.mdns:resolver] [Q33709] Sent 42-byte query #1 to <IPv4:BBGMTqrH> over UDP via en0/6 -- id: 0x92F0 (37616), flags: 0x0100 (Q/Query, RD, NoError), counts: 1/0/0/0, BBcUJxna IN A?[0m
+[31m2026-03-24 20:12:58.276284-0700  localhost mDNSResponder[212]: [com.apple.mdns:resolver] [Q33709] Received acceptable 159-byte response from <IPv4:BBGMTqrH> over UDP via en0/6 -- id: 0x92F0 (37616), flags: 0x8180 (R/Query, RD, RA, NoError), counts: 1/7/0/0, BBcUJxna IN A?, 71 IN CNAME BBueqVkD, 183 IN A BBiPbjUp, 183 IN A BByxfMED, 183 IN A BBShFXJn, 183 IN A BBrvKwAi, 183 IN A BBSZYPKF, 183 IN A BBYlkHZF[0m
+2026-03-24 20:12:58.276406-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [Q33709] Handling concluded querier: BBcUJxna A IN
+2026-03-24 20:12:58.276466-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [R115754->Q33709] DNSServiceQueryRecord result -- event: add, expired: no, ifindex: 0, name hash: e242e56, type: CNAME, rdata: <mask.hash: 'W7TlSovFkyrkVbuGolp+TA=='>
+2026-03-24 20:12:58.276495-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [Q33709] AnswerQuestionByFollowingCNAME: following CNAME referral -- CNAME: <mask.hash: '1u4eo+on7eiePSpBjO71dg=='>, referral count: 0
+2026-03-24 20:12:58.276779-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [R115754->Q41496] Question assigned DNS service 1066
+2026-03-24 20:12:58.276876-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [R115754->Q41496] DNSServiceQueryRecord result -- event: add, expired: no, ifindex: 0, name hash: 7b3f5e43, type: A, rdata: <mask.hash: 'SV2ghtl8ywsOpMFDRh5CQg=='>
+2026-03-24 20:12:58.276926-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [R115754->Q41496] DNSServiceQueryRecord result -- event: add, expired: no, ifindex: 0, name hash: 7b3f5e43, type: A, rdata: <mask.hash: '0Z6/NcNKCUisNb8CP5ehcA=='>
+2026-03-24 20:12:58.276950-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [R115754->Q41496] DNSServiceQueryRecord result -- event: add, expired: no, ifindex: 0, name hash: 7b3f5e43, type: A, rdata: <mask.hash: 'UQ2YqNNkNzU9vNv6de8Ijw=='>
+2026-03-24 20:12:58.276971-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [R115754->Q41496] DNSServiceQueryRecord result -- event: add, expired: no, ifindex: 0, name hash: 7b3f5e43, type: A, rdata: <mask.hash: '/XAjvTr19AqeAKcl++6Fqw=='>
+2026-03-24 20:12:58.276993-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [R115754->Q41496] DNSServiceQueryRecord result -- event: add, expired: no, ifindex: 0, name hash: 7b3f5e43, type: A, rdata: <mask.hash: 'eBTRJe9InqqLwczdsWUanQ=='>
+2026-03-24 20:12:58.277012-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [R115754->Q41496] DNSServiceQueryRecord result -- event: add, expired: no, ifindex: 0, name hash: 7b3f5e43, type: A, rdata: <mask.hash: 't2q5hQExf/Nm5beMGntmrw=='>
+2026-03-24 20:12:58.277135-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [R115754] DNSServiceQueryRecord STOP -- name hash: 7b3f5e43, duration: 0s
+2026-03-24 20:12:58.277384-0700  localhost kernel[0]: udp connect: [<IPv4-redacted>:58490<-><IPv4-redacted>:443] interface:  (skipped: 95364)
+so_gencnt: 4220312 so_state: 0x0102 process: Google Chrome He:550 bytes in/out: 0/0 pkts in/out: 0/0 error: 0 so_error: 0 svc/tc: 0 flow: 0xa7b97c08
+2026-03-24 20:12:58.293345-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [R115755] DNSServiceQueryRecord START -- qname: <mask.hash: 'FGZe63FgdUDZv1ArykrIPw=='>, qtype: A, flags: 0x1D000, interface index: 0, client pid: 550 (Google Chrome H), name hash: f92d5498
+2026-03-24 20:12:58.293541-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [R115755->Q39458] Question assigned DNS service 1066
+2026-03-24 20:12:58.293707-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [R115755->Q39458] DNSServiceQueryRecord result -- event: add, expired: no, ifindex: 0, name hash: f92d5498, type: A, rdata: <mask.hash: '/HvdOiiNO9jQZFenpb2UOA=='>
+2026-03-24 20:12:58.293900-0700  localhost mDNSResponder[212]: [com.apple.mDNSResponder:Default] [R115755] DNSServiceQueryRecord STOP -- name hash: f92d5498, duration: 0s
+2026-03-24 20:12:58.294123-0700  localhost kernel[0]: udp connect: [<IPv4-redacted>:57405<-><IPv4-redacted>:443] interface:  (skipped: 95364)
+so_gencnt: 4220317 so_state: 0x0102 process: Google Chrome He:550 bytes in/out: 0/0 pkts in/out: 0/0 error: 0 so_error: 0 svc/tc: 0 flow: 0xa81792e8
+2026-03-24 20:12:58.563207-0700  localhost backupd[272]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9244204e20] activating connection: mach=false listener=false peer=true name=com.apple.backupd.sandbox.xpc.peer[550].0x7f9244204e20
+2026-03-24 20:12:58.566058-0700  localhost backupd[272]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9244204e20] invalidated because the client process (pid 550) either cancelled the connection or exited
+2026-03-24 20:12:58.566212-0700  localhost backupd[272]: (TimeMachine) [com.apple.TimeMachine:General] com.apple.backupd.sandbox.xpc: connection invalid
+2026-03-24 20:12:58.703242-0700  localhost remoted[137]: [com.apple.RemoteServiceDiscovery:remoted] localbridge> Sending heartbeat request 746
+2026-03-24 20:12:58.704111-0700  localhost watchdogd[143]: [com.apple.watchdogd:service-monitoring-thread] 386760547617338: <private>
+2026-03-24 20:12:58.704214-0700  localhost watchdogd[143]: [com.apple.watchdogd:service-monitoring-thread] 386760547920252: <private>
+2026-03-24 20:12:58.704250-0700  localhost watchdogd[143]: [com.apple.watchdogd:service-monitoring-thread] 386760547921597: <private>
+2026-03-24 20:12:58.704279-0700  localhost watchdogd[143]: [com.apple.watchdogd:service-monitoring-thread] 386760547922661: <private>
+2026-03-24 20:12:58.704307-0700  localhost watchdogd[143]: [com.apple.watchdogd:service-monitoring-thread] 386760547923369: <private>
+2026-03-24 20:12:58.704334-0700  localhost watchdogd[143]: [com.apple.watchdogd:service-monitoring-thread] 386760547923973: <private>
+2026-03-24 20:12:58.704360-0700  localhost watchdogd[143]: [com.apple.watchdogd:service-monitoring-thread] 386760547924440: <private>
+2026-03-24 20:12:58.706740-0700  localhost remoted[137]: [com.apple.RemoteServiceDiscovery:remoted] localbridge> Heartbeat 746 succeeded
+2026-03-24 20:12:58.706818-0700  localhost remoted[137]: [com.apple.RemoteServiceDiscovery:watchdog] remote_device_heartbeat() on bridge result: yes
+2026-03-24 20:12:58.887875-0700  localhost kernel[0]: tcp_connection_summary (tcp_usrclosed:3223)[<IPv4-redacted>:50458<-><IPv4-redacted>:443] interface: en0 (skipped: 0)
+so_gencnt: 4217665 t_state: LAST_ACK process: Google Chrome He:550 Duration: 240.064 sec Conn_Time: 0.025 sec bytes in/out: 1977/2808 pkts in/out: 4/7 pkt rxmit: 0 ooo pkts: 0 dup bytes in: 0 ACKs delayed: 0 delayed ACKs sent: 0
+rtt: 23.031 ms rttvar: 8.687 ms base rtt: 6 ms so_error: 0 svc/tc: 0 flow: 0xaa55f6c1
+2026-03-24 20:12:58.887903-0700  localhost kernel[0]: tcp_connection_summary [<IPv4-redacted>:50458<-><IPv4-redacted>:443] interface: en0 (skipped: 0)
+so_gencnt: 4217665 t_state: LAST_ACK process: Google Chrome He:550 flowctl: 0us (0x) SYN in/out: 1/1 FIN in/out: 1/0 RST in/out: 0/0 AccECN (client/server): Disabled/Disabled
+2026-03-24 20:12:59.038409-0700  localhost imagent[542]: (CoreData) CoreData: XPC: Unable to connect to server with options {
+    NSPersistentHistoryTrackingKey = 1;
+    NSReadOnlyPersistentStoreOption = 0;
+    NSXPCStoreServerEndpointFactory = "<CNCDRemotePersistentStoreEndpointFactory: 0x7fa75c51a490>";
+    skipModelCheck = 1;
+}
+[31m2026-03-24 20:12:59.038687-0700  localhost imagent[542]: (CoreData) CoreData: XPC: Unable to load metadata: Error Domain=NSCocoaErrorDomain Code=134060 "A Core Data error occurred." UserInfo={Problem=Unable to send to server; failed after 8 attempts.}[0m
+2026-03-24 20:12:59.038842-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c043260] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+2026-03-24 20:12:59.039057-0700  localhost kernel[0]: (Sandbox) 1 duplicate report for Sandbox: searchpartyuseragent(556) deny(1) mach-lookup com.apple.contactsd.persistence
+2026-03-24 20:12:59.039075-0700  localhost kernel[0]: (Sandbox) Sandbox: imagent(542) deny(1) mach-lookup com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.039176-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c043260] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.039295-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c043260] invalidated after a failed init
+[31m2026-03-24 20:12:59.039428-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.039609-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.039731-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.039784-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa75c51a490 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.039839-0700  localhost imagent[542]: (libsystem_trace.dylib) Created Activity ID: 0xb4c829, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.039838-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa75c51a490 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.039912-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.039989-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c043260] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.040185-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c043260] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.040235-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c043260] invalidated after a failed init
+[31m2026-03-24 20:12:59.040316-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.040434-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.041543-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.041596-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa75c51a490 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.041648-0700  localhost imagent[542]: (libsystem_trace.dylib) Created Activity ID: 0xb4c82a, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.041647-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa75c51a490 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.041714-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.041784-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c50a890] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.041976-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c50a890] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.042674-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c50a890] invalidated after a failed init
+[31m2026-03-24 20:12:59.042809-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.042871-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.042932-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.042979-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa75c51a490 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.043031-0700  localhost imagent[542]: (libsystem_trace.dylib) Created Activity ID: 0xb4c82b, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.043030-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa75c51a490 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.043100-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.043166-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c043260] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.043352-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c043260] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.043427-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c043260] invalidated after a failed init
+[31m2026-03-24 20:12:59.043532-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.043631-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.043685-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.043724-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa75c51a490 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.043767-0700  localhost imagent[542]: (libsystem_trace.dylib) Created Activity ID: 0xb4c82c, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.043766-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa75c51a490 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.043823-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+[31m2026-03-24 20:12:59.044229-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: addPersistentStoreWithType:configuration:URL:options:error: returned error NSCocoaErrorDomain (134060)[0m
+[31m2026-03-24 20:12:59.045616-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: userInfo:[0m
+[31m2026-03-24 20:12:59.045662-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: 	Problem : Unable to send to server; failed after 8 attempts.[0m
+[31m2026-03-24 20:12:59.045696-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: storeType: NSXPCStore[0m
+[31m2026-03-24 20:12:59.045725-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: configuration: (null)[0m
+[31m2026-03-24 20:12:59.045754-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: URL: (null)[0m
+2026-03-24 20:12:59.045789-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:annotation] CoreData: annotation: options:
+2026-03-24 20:12:59.045820-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:annotation] CoreData: annotation: 	NSReadOnlyPersistentStoreOption : 0
+2026-03-24 20:12:59.045858-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:annotation] CoreData: annotation: 	NSXPCStoreServerEndpointFactory : <CNCDRemotePersistentStoreEndpointFactory: 0x7fa75c51a490>
+2026-03-24 20:12:59.045902-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:annotation] CoreData: annotation: 	skipModelCheck : 1
+2026-03-24 20:12:59.045952-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:annotation] CoreData: annotation: 	NSPersistentHistoryTrackingKey : 1
+[31m2026-03-24 20:12:59.046056-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:PersistentStoreBuilder] Unable to open XPC store: Error Domain=NSCocoaErrorDomain Code=134060 "A Core Data error occurred." UserInfo={Problem=Unable to send to server; failed after 8 attempts.} {[0m
+    Problem = "Unable to send to server; failed after 8 attempts.";
+}
+2026-03-24 20:12:59.047756-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:PersistentStoreBuilder] Did add unprepared store without migration (path: (null))
+2026-03-24 20:12:59.047853-0700  localhost imagent[542]: (libsystem_trace.dylib) Created Activity ID: 0xb4c82d, Description: Activity for state dumps
+2026-03-24 20:12:59.047851-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store coordinator created with no stores
+2026-03-24 20:12:59.048485-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence.lifecycle] PSC out of sync with reality: expected (
+    "file:///Users/abhijeetdutta/Library/Application%20Support/AddressBook/Sources/CB991CBD-0F4F-4770-9ADF-81CF6EB56C96/AddressBook-v22.abcddb",
+    "file:///Users/abhijeetdutta/Library/Application%20Support/AddressBook/AddressBook-v22.abcddb"
+), actual (
+)
+2026-03-24 20:12:59.048559-0700  localhost imagent[542]: (Contacts) [com.apple.contacts:change-history] Change history operation performed with no stores
+[31m2026-03-24 20:12:59.049633-0700  localhost imagent[542]: (Contacts) [com.apple.contacts:api-triage] 0320 Could not fetch the current history anchor; the client will be handed a nil token, resulting in a full sync on the next change history request. Error: Error Domain=CNErrorDomain Code=1008 UserInfo={NSLocalizedDescription=<private>, NSLocalizedFailureReason=<private>}[0m
+2026-03-24 20:12:59.049989-0700  localhost imagent[542]: (Contacts) [com.apple.contacts:api-triage] 0320 FINISH (84.2 s)
+2026-03-24 20:12:59.050038-0700  localhost imagent[542]: (Contacts) Created Activity ID: 0xb4c82e, Description: FetchingGroups
+2026-03-24 20:12:59.050091-0700  localhost imagent[542]: (loginsupport) [com.apple.login:SA_General] SASSessionStateForUser:1282: enter
+2026-03-24 20:12:59.050305-0700  localhost imagent[542]: (loginsupport) [com.apple.login:SA_General] SASSessionStateForUser:1302: SA: currentState: 2
+2026-03-24 20:12:59.050814-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c015e10] activating connection: mach=true listener=false peer=false name=com.apple.AddressBook.ContactsAccountsService
+[31m2026-03-24 20:12:59.050985-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c015e10] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.050924-0700  localhost kernel[0]: (Sandbox) 3 duplicate reports for Sandbox: imagent(542) deny(1) mach-lookup com.apple.contactsd.persistence
+2026-03-24 20:12:59.051036-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c015e10] invalidated after a failed init
+2026-03-24 20:12:59.050933-0700  localhost kernel[0]: (Sandbox) Sandbox: imagent(542) deny(1) mach-lookup com.apple.AddressBook.ContactsAccountsService
+[31m2026-03-24 20:12:59.051188-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:migration] [Migration] Migration service failed database preparation: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.AddressBook.ContactsAccountsService was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.AddressBook.ContactsAccountsService was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.051289-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:PersistentStoreBuilder] Database preparation failed: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.AddressBook.ContactsAccountsService was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.AddressBook.ContactsAccountsService was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+2026-03-24 20:12:59.051326-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:PersistentStoreBuilder] Will add unprepared store without migration (path: (null))
+2026-03-24 20:12:59.051362-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:PersistentStoreBuilder] Will add XPC store with options: (null) <private>
+2026-03-24 20:12:59.055521-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c516db0] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+2026-03-24 20:12:59.055653-0700  localhost kernel[0]: (Sandbox) Sandbox: imagent(542) deny(1) mach-lookup com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.055709-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c516db0] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.055744-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c516db0] invalidated after a failed init
+[31m2026-03-24 20:12:59.055801-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.055882-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.055921-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.055954-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa762a75f40 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.056009-0700  localhost imagent[542]: (libsystem_trace.dylib) Created Activity ID: 0xb4c82f, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.056006-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa762a75f40 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.056065-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.056118-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75a6399e0] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.056252-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75a6399e0] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.056301-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75a6399e0] invalidated after a failed init
+[31m2026-03-24 20:12:59.056385-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.056470-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.056511-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.056545-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa762a75f40 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.056594-0700  localhost imagent[542]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbb0, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.056585-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa762a75f40 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.056649-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.056703-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75a783020] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.056870-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75a783020] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.056913-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75a783020] invalidated after a failed init
+[31m2026-03-24 20:12:59.056968-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.057049-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.057092-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.057126-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa762a75f40 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.057167-0700  localhost imagent[542]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbb1, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.057166-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa762a75f40 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.057220-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.057283-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c247920] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.057403-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c247920] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.057448-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c247920] invalidated after a failed init
+[31m2026-03-24 20:12:59.057500-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.057576-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.057616-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.057651-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa762a75f40 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.057719-0700  localhost imagent[542]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbb2, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.057718-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa762a75f40 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.057767-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.058073-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75a74afc0] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.058210-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75a74afc0] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.058248-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75a74afc0] invalidated after a failed init
+[31m2026-03-24 20:12:59.058294-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.058367-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.058411-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.058444-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa762a75f40 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.058492-0700  localhost imagent[542]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbb3, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.058491-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa762a75f40 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.058540-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.058590-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75a20aef0] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.058723-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75a20aef0] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.058758-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75a20aef0] invalidated after a failed init
+[31m2026-03-24 20:12:59.058812-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.058912-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.058957-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.058994-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa762a75f40 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.059034-0700  localhost imagent[542]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbb4, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.059033-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa762a75f40 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.059094-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.059138-0700  localhost imagent[542]: (CoreData) CoreData: XPC: sendMessage: failed #0
+2026-03-24 20:12:59.059197-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa762aeee80] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.059319-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa762aeee80] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.059358-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa762aeee80] invalidated after a failed init
+[31m2026-03-24 20:12:59.059416-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.059488-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.059563-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.059595-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa762a75f40 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.059639-0700  localhost imagent[542]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbb5, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.059638-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa762a75f40 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.059689-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.059736-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c247920] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.059844-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c247920] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.059879-0700  localhost imagent[542]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa75c247920] invalidated after a failed init
+[31m2026-03-24 20:12:59.059927-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.059993-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.060034-0700  localhost imagent[542]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.060066-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa762a75f40 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.060104-0700  localhost imagent[542]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbb6, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.060103-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7fa762a75f40 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.060149-0700  localhost imagent[542]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.060189-0700  localhost imagent[542]: (CoreData) CoreData: XPC: sendMessage: failed #1
+2026-03-24 20:12:59.106834-0700  localhost searchpartyuseragent[556]: (CoreData) CoreData: XPC: Unable to connect to server with options {
+    NSPersistentHistoryTrackingKey = 1;
+    NSReadOnlyPersistentStoreOption = 0;
+    NSXPCStoreServerEndpointFactory = "<CNCDRemotePersistentStoreEndpointFactory: 0x7f9738008ee0>";
+    skipModelCheck = 1;
+}
+[31m2026-03-24 20:12:59.107098-0700  localhost searchpartyuseragent[556]: (CoreData) CoreData: XPC: Unable to load metadata: Error Domain=NSCocoaErrorDomain Code=134060 "A Core Data error occurred." UserInfo={Problem=Unable to send to server; failed after 8 attempts.}[0m
+2026-03-24 20:12:59.107231-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973847b300] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+2026-03-24 20:12:59.107383-0700  localhost kernel[0]: (Sandbox) 7 duplicate reports for Sandbox: imagent(542) deny(1) mach-lookup com.apple.contactsd.persistence
+2026-03-24 20:12:59.107395-0700  localhost kernel[0]: (Sandbox) Sandbox: searchpartyuseragent(556) deny(1) mach-lookup com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.107490-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973847b300] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.107550-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973847b300] invalidated after a failed init
+[31m2026-03-24 20:12:59.107633-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.107771-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.107831-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.107879-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738008ee0 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.107937-0700  localhost searchpartyuseragent[556]: (libsystem_trace.dylib) Created Activity ID: 0xb4c6fe, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.107935-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738008ee0 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.108009-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.108087-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973d183da0] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.108258-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973d183da0] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.108316-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973d183da0] invalidated after a failed init
+[31m2026-03-24 20:12:59.108442-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.108482-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.108546-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.108594-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738008ee0 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.108649-0700  localhost searchpartyuseragent[556]: (libsystem_trace.dylib) Created Activity ID: 0xb4c6ff, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.108646-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738008ee0 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.108728-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.108800-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738335660] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.108967-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738335660] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.109026-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738335660] invalidated after a failed init
+[31m2026-03-24 20:12:59.109109-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.109223-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.109276-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.109650-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738008ee0 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.109721-0700  localhost searchpartyuseragent[556]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbc0, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.109719-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738008ee0 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.109841-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.109942-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973d05ff90] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.110149-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973d05ff90] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.110200-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973d05ff90] invalidated after a failed init
+[31m2026-03-24 20:12:59.110273-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.110390-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.110494-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.110610-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738008ee0 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.110672-0700  localhost searchpartyuseragent[556]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbc1, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.110671-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738008ee0 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.110756-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+[31m2026-03-24 20:12:59.111284-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: addPersistentStoreWithType:configuration:URL:options:error: returned error NSCocoaErrorDomain (134060)[0m
+[31m2026-03-24 20:12:59.111346-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: userInfo:[0m
+[31m2026-03-24 20:12:59.111390-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: 	Problem : Unable to send to server; failed after 8 attempts.[0m
+[31m2026-03-24 20:12:59.111431-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: storeType: NSXPCStore[0m
+[31m2026-03-24 20:12:59.111469-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: configuration: (null)[0m
+[31m2026-03-24 20:12:59.111512-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: URL: file:///Users/abhijeetdutta/Library/Application%20Support/AddressBook/Sources/CB991CBD-0F4F-4770-9ADF-81CF6EB56C96/AddressBook-v22.abcddb[0m
+2026-03-24 20:12:59.111560-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:annotation] CoreData: annotation: options:
+2026-03-24 20:12:59.111601-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:annotation] CoreData: annotation: 	NSReadOnlyPersistentStoreOption : 0
+2026-03-24 20:12:59.111648-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:annotation] CoreData: annotation: 	NSXPCStoreServerEndpointFactory : <CNCDRemotePersistentStoreEndpointFactory: 0x7f9738008ee0>
+2026-03-24 20:12:59.111695-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:annotation] CoreData: annotation: 	skipModelCheck : 1
+2026-03-24 20:12:59.111735-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:annotation] CoreData: annotation: 	NSPersistentHistoryTrackingKey : 1
+[31m2026-03-24 20:12:59.111831-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:PersistentStoreBuilder] Unable to open XPC store: Error Domain=NSCocoaErrorDomain Code=134060 "A Core Data error occurred." UserInfo={Problem=Unable to send to server; failed after 8 attempts.} {[0m
+    Problem = "Unable to send to server; failed after 8 attempts.";
+}
+2026-03-24 20:12:59.111884-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:PersistentStoreBuilder] Did add unprepared store without migration (path: file:///Users/abhijeetdutta/Library/Application%20Support/AddressBook/Sources/CB991CBD-0F4F-4770-9ADF-81CF6EB56C96/AddressBook-v22.abcddb)
+2026-03-24 20:12:59.111980-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973853a120] activating connection: mach=true listener=false peer=false name=com.apple.AddressBook.ContactsAccountsService
+2026-03-24 20:12:59.112527-0700  localhost contactsd[48113]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fb5a251bda0] activating connection: mach=false listener=false peer=true name=com.apple.AddressBook.ContactsAccountsService.peer[556].0x7fb5a251bda0
+2026-03-24 20:12:59.114114-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973853a120] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-03-24 20:12:59.114184-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:PersistentStoreBuilder] Will add prepared store without migration (path: file:///Users/abhijeetdutta/Library/Application%20Support/AddressBook/AddressBook-v22.abcddb)
+2026-03-24 20:12:59.114168-0700  localhost contactsd[48113]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fb5a251bda0] invalidated because the client process (pid 556) either cancelled the connection or exited
+2026-03-24 20:12:59.114226-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:PersistentStoreBuilder] Will add XPC store with options: <private> <private>
+2026-03-24 20:12:59.117947-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738491e00] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.118110-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738491e00] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.118147-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738491e00] invalidated after a failed init
+[31m2026-03-24 20:12:59.118220-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.118331-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.118374-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.118411-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738463b90 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.118457-0700  localhost searchpartyuseragent[556]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbc2, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.118456-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738463b90 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.118512-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.118582-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738335660] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.118758-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738335660] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.118798-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738335660] invalidated after a failed init
+[31m2026-03-24 20:12:59.118853-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.118961-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.119016-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.119065-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738463b90 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.119114-0700  localhost searchpartyuseragent[556]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbc3, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.119113-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738463b90 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.119177-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.119252-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973853a120] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.119396-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973853a120] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.119440-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973853a120] invalidated after a failed init
+[31m2026-03-24 20:12:59.119502-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.119604-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.119652-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.119695-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738463b90 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.119744-0700  localhost searchpartyuseragent[556]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbc4, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.119742-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738463b90 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.119807-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.119879-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973853a120] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.120015-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973853a120] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.120060-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973853a120] invalidated after a failed init
+[31m2026-03-24 20:12:59.120157-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.120191-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.120260-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.120306-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738463b90 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.120350-0700  localhost searchpartyuseragent[556]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbc5, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.120349-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738463b90 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.120414-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.120762-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973d139960] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.120888-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973d139960] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.120937-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f973d139960] invalidated after a failed init
+[31m2026-03-24 20:12:59.121019-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.121123-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.121182-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.121221-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738463b90 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.121264-0700  localhost searchpartyuseragent[556]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbc6, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.121263-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738463b90 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.121319-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.121374-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738335660] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.121512-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738335660] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.121562-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738335660] invalidated after a failed init
+[31m2026-03-24 20:12:59.121626-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.121707-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.121759-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.121800-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738463b90 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.121844-0700  localhost searchpartyuseragent[556]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbc7, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.121843-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738463b90 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.121902-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.121955-0700  localhost searchpartyuseragent[556]: (CoreData) CoreData: XPC: sendMessage: failed #0
+2026-03-24 20:12:59.122028-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738025350] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.122157-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738025350] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.122206-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738025350] invalidated after a failed init
+[31m2026-03-24 20:12:59.122283-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.122367-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.122408-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.122447-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738463b90 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.122489-0700  localhost searchpartyuseragent[556]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbc8, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.122488-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738463b90 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.122546-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.122625-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738025350] activating connection: mach=true listener=false peer=false name=com.apple.contactsd.persistence
+[31m2026-03-24 20:12:59.122747-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738025350] failed to do a bootstrap look-up: xpc_error=[159: Unknown error: 159][0m
+2026-03-24 20:12:59.122792-0700  localhost searchpartyuseragent[556]: (libxpc.dylib) [com.apple.xpc:connection] [0x7f9738025350] invalidated after a failed init
+[31m2026-03-24 20:12:59.122843-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Persistent store service connection invalidated: failed at lookup with error 159 - Sandbox restriction[0m
+[31m2026-03-24 20:12:59.122919-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error communicating with persistent store service proxy: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction." UserInfo={NSDebugDescription=The connection to service named com.apple.contactsd.persistence was invalidated: failed at lookup with error 159 - Sandbox restriction.}[0m
+[31m2026-03-24 20:12:59.122958-0700  localhost searchpartyuseragent[556]: (ContactsPersistence) [com.apple.contacts:persistence] Error connecting to remote endpoint: (null)[0m
+[31m2026-03-24 20:12:59.122996-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: fault: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738463b90 -newEndpoint returned nil[0m
+2026-03-24 20:12:59.123036-0700  localhost searchpartyuseragent[556]: (libsystem_trace.dylib) Created Activity ID: 0xb4cbc9, Description: Activity for state dumps
+[31m2026-03-24 20:12:59.123035-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: Unable to create token NSXPCConnection.  NSXPCStoreServerEndpointFactory 0x7f9738463b90 -newEndpoint returned nil[0m
+[31m2026-03-24 20:12:59.123091-0700  localhost searchpartyuseragent[556]: (CoreData) [com.apple.coredata:error] CoreData: error: Failed to create NSXPCConnection[0m
+2026-03-24 20:12:59.123138-0700  localhost searchpartyuseragent[556]: (CoreData) CoreData: XPC: sendMessage: failed #1
+2026-03-24 20:12:59.143131-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] Dispatching event with 3 children, _eventMask=0x63 _childEventMask=0x62 Cancel=0 Touching=1 inRange=1 (deviceID 0x300000080500000)
+2026-03-24 20:12:59.160424-0700  localhost kernel[0]: udp connect: [<IPv4-redacted>:58050<-><IPv4-redacted>:443] interface:  (skipped: 95364)
+so_gencnt: 4220322 so_state: 0x0102 process: Google Chrome He:550 bytes in/out: 0/0 pkts in/out: 0/0 error: 0 so_error: 0 svc/tc: 0 flow: 0xbd815b01
+2026-03-24 20:12:59.255571-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: isInfraRealtimePacketThresholdAllowed allowed:1 option:32 threshold:50 noRegistrations:1 cachedPeerCount:0 fastDiscoveryInactive:1 fastDiscoveryOnSince:386761100
+2026-03-24 20:12:59.255601-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: currentInfraTrafficType:8981 checking if realtime upgrade required with inputPackets:79 outputPackets:65 packetThreshold:50
+2026-03-24 20:12:59.255608-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: monitorInfraTraffic[9103] Infra Traffic type has changed from Idle to Real Time. AWDL is Off
+2026-03-24 20:12:59.255614-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: monitorInfraTraffic[9182]: Updating infra traffic state from Idle to Real Time
+2026-03-24 20:12:59.272721-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] [HID] [MT] startMomentumTimerForEvent Starting Momentum Scroll 0x 20y 0
+2026-03-24 20:12:59.272970-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] Dispatching event with 5 children, _eventMask=0xa _childEventMask=0x2 Cancel=0 Touching=0 inRange=1 (deviceID 0x300000080500000)
+2026-03-24 20:12:59.530971-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] [HID] [MT] dispatchScrollEvent Momentum interrupted
+2026-03-24 20:12:59.531167-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] Dispatching event with 4 children, _eventMask=0x62 _childEventMask=0x63 Cancel=0 Touching=1 inRange=1 (deviceID 0x300000080500000)
+2026-03-24 20:12:59.539345-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] Dispatching event with 3 children, _eventMask=0x60 _childEventMask=0x62 Cancel=0 Touching=1 inRange=1 (deviceID 0x300000080500000)
+2026-03-24 20:12:59.668798-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] [HID] [MT] startMomentumTimerForEvent Starting Momentum Scroll 0x -12y 0
+2026-03-24 20:12:59.669051-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] Dispatching event with 5 children, _eventMask=0x4c _childEventMask=0x46 Cancel=0 Touching=1 inRange=1 (deviceID 0x300000080500000)
+2026-03-24 20:12:59.675407-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] Dispatching event with 3 children, _eventMask=0x22 _childEventMask=0x3 Cancel=0 Touching=0 inRange=1 (deviceID 0x300000080500000)
+2026-03-24 20:12:59.772908-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] [HID] [MT] dispatchScrollEvent Momentum interrupted
+2026-03-24 20:12:59.773106-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] Dispatching event with 4 children, _eventMask=0x63 _childEventMask=0x63 Cancel=0 Touching=1 inRange=1 (deviceID 0x300000080500000)
+2026-03-24 20:12:59.781432-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] Dispatching event with 3 children, _eventMask=0x60 _childEventMask=0x62 Cancel=0 Touching=1 inRange=1 (deviceID 0x300000080500000)
+2026-03-24 20:12:59.822225-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice D3568EC4-CAF3-1050-F618-93A317B71B16, BDA 73:47:A2:E3:0F:AC, Nm 'Bluetooth Device', DsFl 0x40 < NearbyInfo >, DvF 0x40000000000 < Connectable >, RSSI -78, Ch 39, AdTsMC <489445306345>, AMfD <4c 00 10 07 23 1f ca bf ec 36 18>, nbIAT <ca bf ec>, nbIF 0x13C2 < Ranging AT Duet WiFiP2P HtSp Stat >, CF 0x200000000 < RSSI >
+2026-03-24 20:12:59.822653-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice D3568EC4-CAF3-1050-F618-93A317B71B16, BDA 73:47:A2:E3:0F:AC, Nm 'Bluetooth Device', DsFl 0x40 < NearbyInfo >, DvF 0x40000000000 < Connectable >, RSSI -78, Ch 39, AdTsMC <489445306889>, AMfD <4c 00 10 07 23 1f ca bf ec 36 18>, nbIAT <ca bf ec>, nbIF 0x13C2 < Ranging AT Duet WiFiP2P HtSp Stat >, CF 0x200000000 < RSSI >
+[31m2026-03-24 20:12:59.822806-0700  localhost sharingd[459]: (CoreUtils) [com.apple.sharing:SDNearbyAgentCore] ### Unable to decrypt activity level with authTag yes identity no error 0 for device SFDevice ID bb00ca66-2f2e-1000-8000-001ff3fb80df, RSSI -78 (-76)~F, DuetSync, WiFiP2P, DF 0x20 < Ranging >, DT Generic, AcLv ? (16)[0m
+[31m2026-03-24 20:12:59.823427-0700  localhost sharingd[459]: (CoreUtils) [com.apple.sharing:SDNearbyAgentCore] ### Unable to decrypt activity level with authTag yes identity no error 0 for device SFDevice ID bb00ca66-2f2e-1000-8000-001ff3fb80df, RSSI -78 (-76)~F, DuetSync, WiFiP2P, DF 0x20 < Ranging >, DT Generic, AcLv ? (16)[0m
+2026-03-24 20:12:59.836590-0700  localhost runningboardd[199]: (RunningBoard) Created Activity ID: 0xb4cb0b, Description: timer
+2026-03-24 20:12:59.836672-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:assertion] Assertion did invalidate due to timeout: 199-161-112214 (target:[app<application.com.apple.Terminal.1152921500311911760.1152921500311911765(502)>:16247])
+2026-03-24 20:12:59.840275-0700  localhost duetexpertd[953]: (AppPredictionInternal) [com.apple.duetexpertd.atx:general] Donation processing - Processing donations for <private>, launched on: Tue Mar 24 20:12:49 2026
+2026-03-24 20:12:59.844092-0700  localhost duetexpertd[953]: (BiomeFoundation) Created Activity ID: 0xb4cacb, Description: BMAccessClient.requestAccessToResource: BFS
+2026-03-24 20:12:59.845958-0700  localhost duetexpertd[953]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fd8ff160800] activating connection: mach=true listener=false peer=false name=com.apple.biome.access.user
+2026-03-24 20:12:59.847062-0700  localhost BiomeAgent[431]: (BiomeFoundation) [com.apple.Biome:BiomeAccessService] Incoming connection from duetexpertd(953)
+2026-03-24 20:12:59.847277-0700  localhost BiomeAgent[431]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fb8bad43500] activating connection: mach=false listener=false peer=true name=com.apple.biome.access.user.peer[953].0x7fb8bad43500
+2026-03-24 20:12:59.847467-0700  localhost BiomeAgent[431]: (BiomeFoundation) [com.apple.Biome:BiomeAccessService] BMResourceContainerManager received container request for resource: <private> with access mode: read-write
+2026-03-24 20:12:59.847573-0700  localhost BiomeAgent[431]: (BiomeFoundation) [com.apple.Biome:BiomeAccessService] BMResourceContainerManager routing request to DataVault container
+[31m2026-03-24 20:12:59.849079-0700  localhost duetexpertd[953]: (BiomeFoundation) Created Activity ID: 0xb4cacc, Description: _BMXPCFileManager._fileHandleForFileAtPath:flags:protection:error:[0m
+2026-03-24 20:12:59.850075-0700  localhost duetexpertd[953]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fd8ff160800] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-03-24 20:12:59.850163-0700  localhost BiomeAgent[431]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fb8bad43500] invalidated because the client process (pid 953) either cancelled the connection or exited
+[31m2026-03-24 20:12:59.850378-0700  localhost duetexpertd[953]: (BiomeFoundation) Created Activity ID: 0xb4cacd, Description: _BMXPCFileManager._fileHandleForFileAtPath:flags:protection:error:[0m
+[31m2026-03-24 20:12:59.851427-0700  localhost duetexpertd[953]: (BiomeFoundation) Created Activity ID: 0xb4cace, Description: _BMXPCFileManager._fileHandleForFileAtPath:flags:protection:error:[0m
+[31m2026-03-24 20:12:59.852501-0700  localhost duetexpertd[953]: (BiomeFoundation) Created Activity ID: 0xb4cacf, Description: _BMXPCFileManager._fileHandleForFileAtPath:flags:protection:error:[0m
+[31m2026-03-24 20:12:59.853430-0700  localhost duetexpertd[953]: (BiomeFoundation) Created Activity ID: 0xb4cbd0, Description: _BMXPCFileManager._fileHandleForFileAtPath:flags:protection:error:[0m
+2026-03-24 20:12:59.854323-0700  localhost duetexpertd[953]: (CoreLocation) Created Activity ID: 0xb4cbd1, Description: CL: CLLocationManager
+2026-03-24 20:12:59.855830-0700  localhost duetexpertd[953]: (CoreLocation) [com.apple.locationd.Core:Client] {"msg":"CLLocationManager", "event":"activity", "_cmd":"location", "self":"0x7fd8fd30bbd0"}
+2026-03-24 20:12:59.856037-0700  localhost locationd[166]: [com.apple.locationd.Core:Client] {"msg":"client getting effective client name", "bundleId":"", "bundlePath":"\/System\/Library\/PrivateFrameworks\/CoreParsec.framework"}
+2026-03-24 20:12:59.856124-0700  localhost locationd[166]: (CFOpenDirectory) Created Activity ID: 0xb4cb71, Description: Open a given node
+2026-03-24 20:12:59.856894-0700  localhost locationd[166]: (CFOpenDirectory) Created Activity ID: 0xb4cb72, Description: Querying records from directories
+2026-03-24 20:12:59.858402-0700  localhost locationd[166]: (CFOpenDirectory) Created Activity ID: 0xb4cb73, Description: Closing a node reference
+2026-03-24 20:12:59.858532-0700  localhost duetexpertd[953]: (ProactiveContextClient) [com.apple.duetexpertd.atx:general] <private> - currentLocationAndNeedsUpdate:0 returning result: <private> and needsLocationUpdate: 0 for reason: <private>
+2026-03-24 20:12:59.858890-0700  localhost duetexpertd[953]: (AppPredictionInternal) [com.apple.duetexpertd.atx:general] Unexpected NULL isEnterpriseApp for bundleId: com.apple.DEC.AppPredictionInternal.backlightActivated
+2026-03-24 20:12:59.859449-0700  localhost duetexpertd[953]: (CoreLocation) Created Activity ID: 0xb4cbd2, Description: CL: CLLocationManager
+2026-03-24 20:12:59.859484-0700  localhost duetexpertd[953]: (CoreLocation) [com.apple.locationd.Core:Client] {"msg":"CLLocationManager", "event":"activity", "_cmd":"location", "self":"0x7fd8fd30bbd0"}
+2026-03-24 20:12:59.859620-0700  localhost locationd[166]: [com.apple.locationd.Core:Client] {"msg":"client getting effective client name", "bundleId":"", "bundlePath":"\/System\/Library\/PrivateFrameworks\/CoreParsec.framework"}
+2026-03-24 20:12:59.859700-0700  localhost locationd[166]: (CFOpenDirectory) Created Activity ID: 0xb4cb74, Description: Open a given node
+2026-03-24 20:12:59.860881-0700  localhost locationd[166]: (CFOpenDirectory) Created Activity ID: 0xb4cb75, Description: Querying records from directories
+2026-03-24 20:12:59.863105-0700  localhost locationd[166]: (CFOpenDirectory) Created Activity ID: 0xb4cb76, Description: Closing a node reference
+2026-03-24 20:12:59.863191-0700  localhost duetexpertd[953]: (ProactiveContextClient) [com.apple.duetexpertd.atx:general] <private> - currentLocationAndNeedsUpdate:0 returning result: <private> and needsLocationUpdate: 0 for reason: <private>
+2026-03-24 20:12:59.863268-0700  localhost duetexpertd[953]: (AppPredictionInternal) [com.apple.duetexpertd.atx:general] <private> - updating prediction context Biome stream.
+2026-03-24 20:12:59.864112-0700  localhost duetexpertd[953]: (BiomeStreams) Created Activity ID: 0xb4cbd3, Description: BMStoreSource.sendEvent
+2026-03-24 20:12:59.866357-0700  localhost duetexpertd[953]: (AppPredictionFoundation) [com.apple.duetexpertd.atx:general] <private> - file size on disk for path <private> is 675
+2026-03-24 20:12:59.866932-0700  localhost duetexpertd[953]: (AppPredictionFoundation) [com.apple.duetexpertd.atx:general] <private> - attempting to save bookmark with directoryURL: <private>
+2026-03-24 20:12:59.866973-0700  localhost duetexpertd[953]: (AppPredictionFoundation) [com.apple.duetexpertd.atx:general] <private> - attempting to save bookmark with fileURL: <private>
+2026-03-24 20:12:59.868808-0700  localhost duetexpertd[953]: (AppPredictionInternal) [com.apple.duetexpertd.atx:hero] No new POI category received from poiCategory stream since the last saved bookmark within the past 14400 seconds, returning cached POI category: ATXDefaultHeroPOICategory
+2026-03-24 20:12:59.869698-0700  localhost duetexpertd[953]: (AppPredictionInternal) [com.apple.duetexpertd.atx:general] ATXUpdatePredictions: cache age 450.000000, reason app launch
+2026-03-24 20:12:59.869854-0700  localhost duetexpertd[953]: (AppPredictionFoundation) [com.apple.duetexpertd.atx:homescreen] Couldn't open Home Screens cache file because it is missing
+2026-03-24 20:12:59.870039-0700  localhost duetexpertd[953]: (AppPredictionInternal) [com.apple.duetexpertd.atx:general] The prediction cache seems valid and was refreshed 213.35 seconds ago (450.00 second refresh rate) at path: <private>
+2026-03-24 20:12:59.870504-0700  localhost duetexpertd[953]: (AppPredictionInternal) [com.apple.duetexpertd.atx:general] The prediction cache seems valid and was refreshed 213.20 seconds ago (450.00 second refresh rate) at path: <private>
+2026-03-24 20:12:59.870554-0700  localhost duetexpertd[953]: (AppPredictionInternal) [com.apple.duetexpertd.atx:general] ATXUpdatePredictionsManager - -[ATXUpdatePredictionsManager updateBehavioralPredictionsIfOlderThan:reason:]_block_invoke: app consumerSubTypes to refresh: (
+)
+2026-03-24 20:12:59.871219-0700  localhost duetexpertd[953]: (AppPredictionInternal) [com.apple.duetexpertd.atx:general] ATXUpdatePredictionsManager - -[ATXUpdatePredictionsManager updateBehavioralPredictionsIfOlderThan:reason:]_block_invoke: action consumerSubTypes to refresh: (
+)
+2026-03-24 20:12:59.876546-0700  localhost mds[147]: (CoreDuetContext) Created Activity ID: 0xb4cb83, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:59.876893-0700  localhost mds[147]: (CoreDuetContext) Created Activity ID: 0xb4cb84, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:59.877129-0700  localhost mds[147]: (CoreDuetContext) Created Activity ID: 0xb4cb85, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:59.877376-0700  localhost mds[147]: (CoreDuetContext) Created Activity ID: 0xb4cb86, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:59.877640-0700  localhost mds[147]: (CoreDuetContext) Created Activity ID: 0xb4cb87, Description: CoreDuet: ClientContext objectForContextualKeyPath:
+2026-03-24 20:12:59.897086-0700  localhost xpcproxy[67773]: (libsystem_info.dylib) Created Activity ID: 0xb4cbe0, Description: Retrieve User by ID
+2026-03-24 20:12:59.897988-0700  localhost xpcproxy[67773]: (libsystem_info.dylib) Created Activity ID: 0xb4cbe1, Description: Resolve user group list
+2026-03-24 20:12:59.898356-0700  localhost xpcproxy[67773]: (libsystem_info.dylib) Created Activity ID: 0xb4cbe2, Description: Membership API: translate identifier
+2026-03-24 20:12:59.910235-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] [HID] [MT] startMomentumTimerForEvent Starting Momentum Scroll 0x 26y 0
+2026-03-24 20:12:59.910382-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] Dispatching event with 5 children, _eventMask=0xc _childEventMask=0x6 Cancel=0 Touching=1 inRange=1 (deviceID 0x300000080500000)
+2026-03-24 20:12:59.911620-0700  localhost cfprefsd[192]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fc485748ff0] activating connection: mach=false listener=false peer=true name=com.apple.cfprefsd.daemon.peer[67773].0x7fc485748ff0
+2026-03-24 20:12:59.911730-0700  localhost cfprefsd[402]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fbc6ed19940] activating connection: mach=false listener=false peer=true name=com.apple.cfprefsd.agent.peer[67773].0x7fbc6ed19940
+2026-03-24 20:12:59.917564-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] Dispatching event with 3 children, _eventMask=0x22 _childEventMask=0x3 Cancel=0 Touching=0 inRange=1 (deviceID 0x300000080500000)
+2026-03-24 20:12:59.949683-0700  localhost lsd[415]: (libxpc.dylib) [com.apple.xpc:connection] [0x7fa3dea6d2b0] activating connection: mach=false listener=false peer=true name=com.apple.lsd.mapdb.peer[67773].0x7fa3dea6d2b0
+2026-03-24 20:13:00.000442-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: TX(00:00:00:00:00:00) AC<SU MS NB NRS NA CM EX TF FFP MRET FLE> BE<107 0 0 0 0 0 0 0 0 0 0> (5000ms)
+2026-03-24 20:13:00.000461-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: TX(00:00:00:00:00:00) AC<SU MS NB NRS NA CM EX TF FFP MRET FLE> BK<0 0 0 0 0 0 0 0 0 0 0> (5000ms)
+2026-03-24 20:13:00.000469-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: TX(00:00:00:00:00:00) AC<SU MS NB NRS NA CM EX TF FFP MRET FLE> VI<0 0 0 0 0 0 0 0 0 0 0> (5000ms)
+2026-03-24 20:13:00.000473-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: TX(00:00:00:00:00:00) AC<SU MS NB NRS NA CM EX TF FFP MRET FLE> VO<1 0 0 0 0 0 0 0 0 0 0> (5000ms)
+2026-03-24 20:13:00.000491-0700  localhost kernel[0]: (IO80211Family) LQM-WiFi: BE : Count: 107 avgLatencyMs:0 maxLatencyMs:8
+2026-03-24 20:13:00.000497-0700  localhost kernel[0]: (IO80211Family) LQM-WiFi: BK : Count: 0 avgLatencyMs:0 maxLatencyMs:0
+2026-03-24 20:13:00.000499-0700  localhost kernel[0]: (IO80211Family) LQM-WiFi: VI : Count: 0 avgLatencyMs:0 maxLatencyMs:0
+2026-03-24 20:13:00.000502-0700  localhost kernel[0]: (IO80211Family) LQM-WiFi: VO : Count: 1 avgLatencyMs:4 maxLatencyMs:4
+2026-03-24 20:13:00.000508-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: L3 Control VO TX(00:00:00:00:00:00) Success=1 NoACK=0 Expired=0 OtherErr=0
+2026-03-24 20:13:00.000513-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: TX(FF:FF:FF:FF:FF:FF) AC<SU MS NB NRS NA CM EX TF FFP MRET FLE> BE<0 0 0 0 0 0 0 0 0 0 0> (5000ms)
+2026-03-24 20:13:00.000519-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: TX(FF:FF:FF:FF:FF:FF) AC<SU MS NB NRS NA CM EX TF FFP MRET FLE> BK<0 0 0 0 0 0 0 0 0 0 0> (5000ms)
+2026-03-24 20:13:00.000525-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: TX(FF:FF:FF:FF:FF:FF) AC<SU MS NB NRS NA CM EX TF FFP MRET FLE> VI<0 0 0 0 0 0 0 0 0 0 0> (5000ms)
+2026-03-24 20:13:00.000531-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI: TX(FF:FF:FF:FF:FF:FF) AC<SU MS NB NRS NA CM EX TF FFP MRET FLE> VO<0 0 0 0 0 0 0 0 0 0 0> (5000ms)
+2026-03-24 20:13:00.016988-0700  localhost runningboardd[199]: (RunningBoard) Created Activity ID: 0xb4cb0c, Description: acquireAssertionWithDescriptor
+2026-03-24 20:13:00.017218-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:ttl] Acquiring assertion targeting [osservice<com.apple.controlcenter(502)>:483] from originator [osservice<com.apple.WindowServer(88)>:190] with description <RBSAssertionDescriptor| "AppDrawing" ID:199-190-112217 target:483 attributes:[
+	<RBSDomainAttribute| domain:"com.apple.appnap" name:"AppDrawing" sourceEnvironment:"(null)">,
+	<RBSAcquisitionCompletionAttribute| policy:AfterApplication>
+	]>
+2026-03-24 20:13:00.017378-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:ttl] Assertion 199-190-112217 (target:[osservice<com.apple.controlcenter(502)>:483]) will be created as active
+2026-03-24 20:13:00.017604-0700  localhost runningboardd[199]: (RunningBoard) Created Activity ID: 0xb4cb0d, Description: state update
+2026-03-24 20:13:00.017983-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [osservice<com.apple.controlcenter(502)>:483] Ignoring jetsam update because this process is not memory-managed
+2026-03-24 20:13:00.018067-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [osservice<com.apple.controlcenter(502)>:483] Ignoring suspend because this process is not lifecycle managed
+2026-03-24 20:13:00.018116-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [osservice<com.apple.controlcenter(502)>:483] Ignoring GPU update because this process is not GPU managed
+2026-03-24 20:13:00.018159-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [osservice<com.apple.controlcenter(502)>:483] Ignoring memory limit update because this process is not memory-managed
+2026-03-24 20:13:00.018281-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [osservice<com.apple.controlcenter(502)>:483] Skipping AppNap state - not lifecycle managed
+2026-03-24 20:13:00.019134-0700  localhost filecoordinationd[494]: (RunningBoardServices) Created Activity ID: 0xb4be47, Description: observedProcessStatesDidChange
+2026-03-24 20:13:00.020484-0700  localhost filecoordinationd[494]: (RunningBoardServices) [com.apple.runningboard:monitor] Received state update for 483 (osservice<com.apple.controlcenter(502)>, running-NotVisible
+2026-03-24 20:13:00.020703-0700  localhost runningboardd[199]: (RunningBoard) Created Activity ID: 0xb4cb0e, Description: statesForPredicate
+2026-03-24 20:13:00.036702-0700  localhost runningboardd[199]: (RunningBoard) Created Activity ID: 0xb4cb0f, Description: state update
+2026-03-24 20:13:00.037214-0700  localhost runningboardd[199]: (RunningBoard) Created Activity ID: 0xb4cc00, Description: state notification
+2026-03-24 20:13:00.037924-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [app<application.com.apple.Terminal.1152921500311911760.1152921500311911765(502)>:16247] Ignoring jetsam update because this process is not memory-managed
+2026-03-24 20:13:00.037995-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [app<application.com.apple.Terminal.1152921500311911760.1152921500311911765(502)>:16247] Ignoring suspend because this process is not lifecycle managed
+2026-03-24 20:13:00.038035-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [app<application.com.apple.Terminal.1152921500311911760.1152921500311911765(502)>:16247] Ignoring GPU update because this process is not GPU managed
+2026-03-24 20:13:00.038079-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:process] [app<application.com.apple.Terminal.1152921500311911760.1152921500311911765(502)>:16247] Ignoring memory limit update because this process is not memory-managed
+2026-03-24 20:13:00.038368-0700  localhost runningboardd[199]: (RunningBoard) [com.apple.runningboard:monitor] Calculated state for app<application.com.apple.Terminal.1152921500311911760.1152921500311911765(502)>: running-active (role: UserInteractiveFocal) (endowments: <private>)
+2026-03-24 20:13:00.037740-0700  localhost launchservicesd[161]: (RunningBoardServices) Created Activity ID: 0xb4c878, Description: assertionsDidInvalidate
+2026-03-24 20:13:00.052011-0700  localhost PerfPowerServices[46526]: (CoreLocation) Created Activity ID: 0xb4c06f, Description: CL: CLCopyAppsUsingLocation
+2026-03-24 20:13:00.052065-0700  localhost PerfPowerServices[46526]: (CoreLocation) [com.apple.locationd.Core:Client] {"msg":"CLCopyAppsUsingLocation", "event":"activity"}
+2026-03-24 20:13:00.058786-0700  localhost locationd[166]: (CFOpenDirectory) Created Activity ID: 0xb4cb77, Description: Open a given node
+2026-03-24 20:13:00.059878-0700  localhost locationd[166]: (CFOpenDirectory) Created Activity ID: 0xb4cb78, Description: Querying records from directories
+2026-03-24 20:13:00.061887-0700  localhost locationd[166]: (CFOpenDirectory) Created Activity ID: 0xb4cb79, Description: Closing a node reference
+2026-03-24 20:13:00.088295-0700  localhost kernel[0]: (IO80211Family) LQM-WIFI-CT: ofdmDesense=0 bphyDesense=0 reason=0x0
+2026-03-24 20:13:00.112809-0700  localhost callservicesd[48107]: [com.apple.calls.callservicesd:Default] cleanupExpiredPendingConversations: 7200.000000 <private>
+2026-03-24 20:13:00.138642-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice 19D88E47-E482-88DA-CAD6-244AF2231427, BDA 61:8D:1A:03:C4:CF, Nm 'Bluetooth Device', DsFl 0x40 < NearbyInfo >, DvF 0x40000000000 < Connectable >, RSSI -52, Ch 37, AdTsMC <489445622635>, AMfD <4c 00 10 06 34 1e bb 9d eb 59>, nbIAT <bb 9d eb>, nbIF 0x3C6 < Ranging Me AT Duet WiFiP2P HtSp >, CF 0x200000000 < RSSI >
+[31m2026-03-24 20:13:00.139270-0700  localhost sharingd[459]: (CoreUtils) [com.apple.sharing:SDNearbyAgentCore] ### Unable to decrypt activity level with authTag yes identity no error 0 for device SFDevice ID bb0067c7-fa9a-1000-8000-001ff3fb80df, RSSI -52 (-51)*N, DuetSync, WiFiP2P, DF 0x30 < PeerMe Ranging >, DT Generic, AcLv ? (16)[0m
+2026-03-24 20:13:00.139435-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice 19D88E47-E482-88DA-CAD6-244AF2231427, BDA 61:8D:1A:03:C4:CF, Nm 'Bluetooth Device', DsFl 0x40 < NearbyInfo >, DvF 0x40000000000 < Connectable >, RSSI -52, Ch 37, AdTsMC <489445623776>, AMfD <4c 00 10 06 34 1e bb 9d eb 59>, nbIAT <bb 9d eb>, nbIF 0x3C6 < Ranging Me AT Duet WiFiP2P HtSp >, CF 0x200000000 < RSSI >
+[31m2026-03-24 20:13:00.139941-0700  localhost sharingd[459]: (CoreUtils) [com.apple.sharing:SDNearbyAgentCore] ### Unable to decrypt activity level with authTag yes identity no error 0 for device SFDevice ID bb0067c7-fa9a-1000-8000-001ff3fb80df, RSSI -52 (-51)*N, DuetSync, WiFiP2P, DF 0x30 < PeerMe Ranging >, DT Generic, AcLv ? (16)[0m
+2026-03-24 20:13:00.186764-0700  localhost bluetoothd[61035]: [com.apple.bluetooth:Server.MacCoex] Posting Bluetooth Status Notification <private>
+2026-03-24 20:13:00.187629-0700  localhost airportd[205]: (IO80211) [com.apple.WiFiManager:] BTC: <airport[205]> BluetoothCoexStatusMonitoringCallback: Bluetooth Status Notification
+2026-03-24 20:13:00.187722-0700  localhost airportd[205]: (IO80211) [com.apple.WiFiManager:] BTC: <airport[205]> BluetoothCoexStatusNotificationProcess: BT: ON, Num HID Devices is <0>, Num SCO Devices is <0>, Num A2DP Devices is <0>, Bluetooth Bandwidth Utilization is <3>, LWM <5>, HWM <26>
+2026-03-24 20:13:00.188432-0700  localhost airportd[205]: (IO80211) [com.apple.WiFiManager:] BTC: <airport[205]> __BluetoothCoexHandleUpdateForNode: <en0> Handle Bluetooth Coex: FrequencyBand <1>, Bluetooth Bandwidth Utilization <3>, Clamshell Mode <0>
+2026-03-24 20:13:00.188517-0700  localhost airportd[205]: (IO80211) [com.apple.WiFiManager:] BTC: <airport[205]> __BluetoothCoexHandleUpdateForNode: Driver supports APPLE80211_CAP_COEX_PROFILE_OFFLOAD. Airportd won't BluetoothCoexModeSet() and defer coex profile loading to UDM coex manager (UCM/WRM) ...
+2026-03-24 20:13:00.218427-0700  localhost Activity Monitor[444]: (GPUWrangler) [com.apple.GPUWrangler:default] (reg) gpu 0x56cc flags 0x10 (IG) vid.did=8086.3e9b b:d:f=0:2:0 
+gpu 0x56cc        pci 0x1000003c3 IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/IGPU@2
+gpu 0x56cc       agdc 0x1000006c2     /AppleIntelFramebufferController/IntelFBClientControl
+gpu 0x56cc       gpuc 0x000000000 
+gpu 0x56cc agdpclient 0x000000000 
+gpu 0x56cc      accel 0x100000694     /IntelAccelerator
+gpu 0x56cc      fb0:0 0x100000698     /AppleIntelFramebuffer@0
+2026-03-24 20:13:00.222464-0700  localhost Activity Monitor[444]: (GPUWrangler) [com.apple.GPUWrangler:default] (reg) gpu 0x9f05 flags 0x20 (DG) vid.did=1002.67ef b:d:f=1:0:0 
+gpu 0x9f05        pci 0x1000003ce IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/PEG0@1/IOPP/GFX0@0
+gpu 0x9f05       agdc 0x100000707     /AtiDeviceControl
+gpu 0x9f05       gpuc 0x10000069a     /AMD9500ControllerWrangler
+gpu 0x9f05 agdpclient 0x100000709     /AtiDeviceControl/AppleGraphicsDevicePolicy/AGDPClientControl
+gpu 0x9f05      accel 0x1000006d4     /AMDRadeonX4000_AMDBaffinGraphicsAccelerator
+gpu 0x9f05      fb0:0 0x1000006e5     /ATY,Palena@0/AMDFramebufferVIB
+gpu 0x9f05      fb1:1 0x1000006ef     /ATY,Palena@1/AMDFramebufferVIB
+gpu 0x9f05      fb2:2 0x1000006f5     /ATY,Palena@2/AMDFramebufferVIB
+gpu 0x9f05      fb3:3 0x1000006fb     /ATY,Palena@3/AMDFramebufferVIB
+gpu 0x9f05      fb4:4 0x100000701     /ATY,Palena@4/AMDFramebufferVIB
+2026-03-24 20:13:00.227300-0700  localhost kernel[0]: udp connect: [<IPv6-redacted>:0<-><IPv6-redacted>:0] interface:  (skipped: 95364)
+so_gencnt: 4220323 so_state: 0x0100 process: Google Chrome He:550 bytes in/out: 0/0 pkts in/out: 0/0 error: 65 so_error: 0 svc/tc: 0 flow: 0x0
+2026-03-24 20:13:00.227322-0700  localhost kernel[0]: udp_connection_summary [<IPv6-redacted>:0<-><IPv6-redacted>:0] interface:  (skipped: 95364)
+so_gencnt: 4220323 so_state: 0x0100 process: Google Chrome He:550 Duration: 0.000 sec Conn_Time: 0.000 sec bytes in/out: 0/0 pkts in/out: 0/0 rxnospace pkts/bytes: 0/0 so_error: 0 svc/tc: 0 flow: 0x0flowctl: 0us (0x)
+2026-03-24 20:13:00.279722-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: isInfraRealtimePacketThresholdAllowed allowed:1 option:32 threshold:50 noRegistrations:1 cachedPeerCount:0 fastDiscoveryInactive:1 fastDiscoveryOnSince:386762124
+2026-03-24 20:13:00.279741-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: currentInfraTrafficType:8981 checking if realtime upgrade required with inputPackets:9 outputPackets:6 packetThreshold:50
+2026-03-24 20:13:00.279750-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: monitorInfraTraffic[9103] Infra Traffic type has changed from Real Time to None. AWDL is Off
+2026-03-24 20:13:00.279754-0700  localhost kernel[0]: (IO80211Family) com.apple.p2p: monitorInfraTraffic[9182]: Updating infra traffic state from Real Time to Transition Wait
+2026-03-24 20:13:00.337499-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] [HID] [MT] dispatchScrollEvent Momentum interrupted
+2026-03-24 20:13:00.337784-0700  localhost WindowServer[190]: (MultitouchHID) [com.apple.Multitouch:Plugin] Dispatching event with 3 children, _eventMask=0x63 _childEventMask=0x62 Cancel=0 Touching=1 inRange=1 (deviceID 0x300000080500000)
+2026-03-24 20:13:00.353532-0700  localhost trustd[216]: [com.apple.securityd:pinningQA] could not enable test hierarchy: no UAT pinning preferences set
+2026-03-24 20:13:00.420179-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice 19D88E47-E482-88DA-CAD6-244AF2231427, BDA 61:8D:1A:03:C4:CF, Nm 'Bluetooth Device', DsFl 0x40 < NearbyInfo >, DvF 0x40000000000 < Connectable >, RSSI -55, Ch 38, AdTsMC <489445904562>, AMfD <4c 00 10 06 34 1e bb 9d eb 59>, nbIAT <bb 9d eb>, nbIF 0x3C6 < Ranging Me AT Duet WiFiP2P HtSp >, CF 0x200000000 < RSSI >
+2026-03-24 20:13:00.420498-0700  localhost bluetoothd[61035]: (CoreUtils) [com.apple.bluetooth:CBDaemonServer] BLE Scanner Device Found: CBDevice 19D88E47-E482-88DA-CAD6-244AF2231427, BDA 61:8D:1A:03:C4:CF, Nm 'Bluetooth Device', DsFl 0x40 < NearbyInfo >, DvF 0x40000000000 < Connectable >, RSSI -55, Ch 38, AdTsMC <489445905008>, AMfD <4c 00 10 06 34 1e bb 9d eb 59>, nbIAT <bb 9d eb>, nbIF 0x3C6 < Ranging Me AT Duet WiFiP2P HtSp >, CF 0x200000000 < RSSI >
+[31m2026-03-24 20:13:00.420521-0700  localhost sharingd[459]: (CoreUtils) [com.apple.sharing:SDNearbyAgentCore] ### Unable to decrypt activity level with authTag yes identity no error 0 for device SFDevice ID bb0067c7-fa9a-1000-8000-001ff3fb80df, RSSI -55 (-51)*N, DuetSync, WiFiP2P, DF 0x30 < PeerMe Ranging >, DT Generic, AcLv ? (16)[0m
+[31m2026-03-24 20:13:00.420972-0700  localhost sharingd[459]: (CoreUtils) [com.apple.sharing:SDNearbyAgentCore] ### Unable to decrypt activity level with authTag yes identity no error 0 for device SFDevice ID bb0067c7-fa9a-1000-8000-001ff3fb80df, RSSI -55 (-51)*N, DuetSync, WiFiP2P, DF 0x30 < PeerMe Ranging >, DT Generic, AcLv ? (16)[0m
+2026-03-24 20:13:00.430464-0700  localhost kernel[0]: (corecapture) 489445.915309 wlan0.A[420174] [wcl] checkTrafficCounters@2362:realTime before<0> -> after<0>,  realTimeNumPackets =<1> inactive before<0> -> after<0>,  infraNumPackets =<255> statsIntervalMultiplier=<5>
 
-Stopping tailer...
+Stopping stream and flushing logs...

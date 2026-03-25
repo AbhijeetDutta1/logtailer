@@ -1,0 +1,9 @@
+# Binaries
+mac-log-tailer
+
+# Logs
+logs/*.json
+*.log
+results.log
+live_verification.log
+test.log

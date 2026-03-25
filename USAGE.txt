@@ -1,0 +1,19 @@
+# macOS Log Tailer Usage
+
+## How to Build
+To compile the project into an executable binary called `mac-log-tailer`, run the following command from the project root:
+
+```bash
+/usr/local/go/bin/go build -o mac-log-tailer ./cmd/tailer/main.go
+```
+
+## How to Use
+Once built, you can run the tailer directly:
+
+```bash
+./mac-log-tailer
+```
+
+The tool will start streaming the macOS Unified Logging System. It will:
+1. Print logs to the console (with color-coded errors).
+2. Automatically rotate and save logs into the `logs/` directory as structured JSON files when they reach 1MB or 30 seconds.

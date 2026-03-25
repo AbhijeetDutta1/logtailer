@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"mac-log-tailer/pkg/parser"
+	"logtailer/pkg/parser"
 )
 
 // LogManager handles batching log entries and rotating files based on size and time.
