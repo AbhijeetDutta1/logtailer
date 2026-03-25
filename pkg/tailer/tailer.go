@@ -1,50 +1,41 @@
 package tailer
 
 import (
+	"bufio"
 	"fmt"
-	"io"
-	"os"
-
-	"github.com/nxadm/tail"
+	"os/exec"
 )
 
-// Line represents a single line from a log file.
+// Line represents a single line from the log stream.
 type Line struct {
 	Text  string
 	Error error
 }
 
-// TailFile starts tailing a file and returns a channel of lines.
-func TailFile(filePath string) (<-chan Line, error) {
-	// Check if file exists
-	if _, err := os.Stat(filePath); os.IsNotExist(err) {
-		return nil, fmt.Errorf("file does not exist: %s", filePath)
-	}
-
-	config := tail.Config{
-		Follow:    true,
-		ReOpen:    true,
-		MustExist: true,
-		Poll:      false,
-		Location:  &tail.SeekInfo{Offset: 0, Whence: io.SeekEnd},
-	}
-
-	t, err := tail.TailFile(filePath, config)
+// StreamLogs starts streaming from 'log stream --style syslog' and returns a channel of lines.
+func StreamLogs() (<-chan Line, error) {
+	cmd := exec.Command("log", "stream", "--style", "syslog")
+	stdout, err := cmd.StdoutPipe()
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("failed to create stdout pipe: %v", err)
+	}
+
+	if err := cmd.Start(); err != nil {
+		return nil, fmt.Errorf("failed to start log stream: %v", err)
 	}
 
 	lineChan := make(chan Line)
 
 	go func() {
 		defer close(lineChan)
-		for line := range t.Lines {
-			if line.Err != nil {
-				lineChan <- Line{Error: line.Err}
-				return
-			}
-			lineChan <- Line{Text: line.Text}
+		scanner := bufio.NewScanner(stdout)
+		for scanner.Scan() {
+			lineChan <- Line{Text: scanner.Text()}
 		}
+		if err := scanner.Err(); err != nil {
+			lineChan <- Line{Error: err}
+		}
+		cmd.Wait()
 	}()
 
 	return lineChan, nil
