@@ -1,4 +1,4 @@
-module mac-log-tailer
+module logtailer
 
 go 1.13
 

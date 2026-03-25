@@ -7,8 +7,8 @@ import (
 	"syscall"
 	"time"
 
-	"mac-log-tailer/pkg/parser"
-	"mac-log-tailer/pkg/tailer"
+	"logtailer/pkg/parser"
+	"logtailer/pkg/tailer"
 )
 
 const (
